@@ -1,0 +1,37 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+nav,
+footer {
+  display: block;
+}
+
+.nav-bar {
+  background-color: #e9610c;
+  position: fixed;
+  left: 0;
+  padding: 15px;
+  top: 0;
+  height: 80%;
+  width: 20%;
+}
+
+.nav-bar-links {
+  top: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=style.css.map */
