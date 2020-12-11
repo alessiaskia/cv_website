@@ -18,8 +18,7 @@ for (langButton of langButtons) {
     console.log(e.currentTarget.id);
     currentLanguage = e.currentTarget.id;
     // console.log(tradMenu[currentLanguage].about);
-    menu = `<div class="nav-bar-links"><ul class="d-flex"><li><a href="#contact" class="nav-link contact">contact</a></li><li><a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a></li><li><a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a></li><li><a href="#web-dev" class="nav-link web-dev">${tradMenu[currentLanguage].web}</a></li><li><a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a></li></ul></div>
-        <div class="close"><i class="fas fa-window-close"></i></div>`;
+    menu = `<div class="nav-bar-links"><ul class="d-flex"><li><a href="#contact" class="nav-link contact">contact</a></li><li><a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a></li><li><a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a></li><li><a href="#web-dev" class="nav-link web-dev">${tradMenu[currentLanguage].web}</a></li><li><a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a></li></ul></div><div class="close"><i class="fas fa-window-close"></i></div>`;
     nav.innerHTML = menu;
   });
 }
@@ -29,15 +28,14 @@ for (langButton of langButtons) {
 const closeButton = document.querySelector('.close');
 const openButton = document.querySelector('.open');
 
-const navBar = document.querySelector('.nav-bar');
 closeButton.addEventListener('click', () => {
   console.log('close ok');
-  navBar.classList.add('cache');
+  nav.classList.add('cache');
   openButton.classList.remove('cache');
 });
 
 openButton.addEventListener('click', () => {
   console.log('open ok');
-  navBar.classList.remove('cache');
+  nav.classList.remove('cache');
   openButton.classList.add('cache');
 });

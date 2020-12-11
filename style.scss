@@ -186,6 +186,12 @@ footer {
   font-weight: 500;
   letter-spacing: 0.05rem;
 
+  li {
+    letter-spacing: 0.05rem;
+    color: $primary-white;
+    padding-left: 60px;
+  }
+
   .row {
     justify-content: space-around;
     align-items: center;
@@ -196,12 +202,6 @@ footer {
     color: $primary-white;
 
     .link-languages {
-      li {
-        letter-spacing: 0.05rem;
-        color: $primary-white;
-        padding-left: 20px;
-      }
-
       li:hover,
       li:focus {
         -webkit-transition: all 0.2s;
@@ -216,17 +216,25 @@ footer {
       i {
         line-height: 2.2vh;
         text-align: center;
-        padding-left: 40px;
         font-size: 1.3rem;
       }
-    }
 
-    a {
-      color: $primary-white;
-    }
-    .fab,
-    .fas {
-      width: 2.8vh;
+      li:hover,
+      a:hover,
+      i:hover {
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        font-weight: bold;
+      }
+      a {
+        color: $primary-white;
+      }
+
+      .fab,
+      .fas {
+        width: 2.8vh;
+      }
     }
   }
 }
