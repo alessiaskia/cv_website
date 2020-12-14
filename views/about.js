@@ -1,0 +1,2 @@
+/* eslint-disable import/prefer-default-export */
+export const aboutView = '<section class="about"><div class="rubrique-top"><a name="about"></a><h1>about me</h1></div><div class="rubrique-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, obcaecati veritatis! Ratione repellendus distinctio modi ex quod asperiores tempore itaque ut harum dignissimos cumque temporibus voluptas enim alias, iusto neque?</div></section>';

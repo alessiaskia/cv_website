@@ -1,0 +1,2 @@
+/* eslint-disable import/prefer-default-export */
+export const webView = '<section class="web-dev"><div class="rubrique-top"><a name="web-dev"></a<h1>web development</h1></div><div class="rubrique-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex placeat ad doloremque veritatis in, necessitatibus voluptatum assumenda harum error architecto totam cum, exercitationem, rationeconsectetur cumque rerum quos quo fugit!</div></section>';

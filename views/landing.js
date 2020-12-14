@@ -1,0 +1,2 @@
+// eslint-disable-next-line import/prefer-default-export
+export const landingView = '<section class="landing"><div class="slogan"><div class="my-name">Alessia Scaccia</div><div class="my-title-web">Web Application Developer</div><div class="my-title-trad">Translator and Interpreter</div><div class="choice-language"><ul class="d-flex"><li><a class="language-button" id="en">en</a></li><li><a class="language-button" id="fr">fr</a></li><li><a class="language-button" id="nl">nl</a></li></ul></div></div></section>';

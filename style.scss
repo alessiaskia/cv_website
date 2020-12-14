@@ -22,6 +22,7 @@ body {
   line-height: 1.5;
   text-align: left;
   background-color: $background-black;
+  color: $primary-white;
 }
 
 nav,
@@ -72,64 +73,8 @@ i {
   }
 }
 
-//landing page
-@keyframes example {
-  from {
-    background-color: $primary-black;
-  }
-  to {
-    background-color: $primary-orange;
-  }
-}
-.landing {
-  visibility: hidden;
-  //--- animation ---
-  background-color: $primary-orange;
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .slogan {
-    margin: auto;
-    color: $primary-white;
-    text-align: center;
-    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7);
-    .my-name {
-      letter-spacing: 0.6rem;
-      font-size: 8rem;
-    }
-    .my-title-web {
-      font-size: 4rem;
-    }
-    .my-title-trad {
-      font-size: 3rem;
-    }
-    ul {
-      justify-content: center;
-      align-items: center;
-    }
-    li {
-      padding: 2px;
-      margin: 20px;
-    }
-    a {
-      padding: 8px;
-      font-size: 2rem;
-      color: $primary-white;
-      text-shadow: none;
-    }
-  }
-}
-
 main {
   //display: none;
-  color: $primary-white;
 
   //burger menu
   .open,
@@ -261,21 +206,98 @@ footer {
   }
 }
 
+footer {
+  display: none;
+}
+
+//landing page
+@keyframes colorFade {
+  from {
+    background-color: $primary-black;
+  }
+  to {
+    background-color: $primary-orange;
+  }
+}
+.landing {
+  //visibility: hidden;
+  //--- animation ---
+  background-color: $primary-orange;
+  animation-name: colorFade;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .slogan {
+    margin: auto;
+    color: $primary-white;
+    text-align: center;
+    text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7);
+    .my-name {
+      letter-spacing: 0.6rem;
+      font-size: 8rem;
+    }
+    .my-title-web {
+      font-size: 4rem;
+    }
+    .my-title-trad {
+      font-size: 3rem;
+    }
+    ul {
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      padding: 2px;
+      margin: 20px;
+    }
+    a {
+      padding: 8px;
+      font-size: 2rem;
+      color: $primary-white;
+      text-shadow: none;
+    }
+  }
+}
 // --- sections / rubrique --- //
-.all-rubriques {
+
+.all-sections {
+  //visibility: hidden;
   .about {
-    visibility: hidden;
   }
   .web-dev {
-    visibility: hidden;
   }
   .translation {
-    visibility: hidden;
   }
   .background {
-    visibility: hidden;
   }
   .contact {
-    visibility: hidden;
+  }
+}
+
+// --- media-queries --- //
+
+@media only screen and (max-width: 360px) {
+  .nav-bar {
+    background-color: $primary-orange;
+    position: fixed;
+    top: 0;
+    color: $primary-white;
+    height: 8%;
+    width: 100%;
+
+    .nav-bar-links {
+      display: none;
+    }
+
+    .open,
+    close {
+      left: 2vh;
+    }
   }
 }
