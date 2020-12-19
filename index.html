@@ -7,24 +7,26 @@
     <title>Alessia Scaccia - CV & Portfolio</title>
   </head>
   <body>
+    <!-- Main : contient rubriques, sections, nav et footer -->
     <!-- landing page (à cacher une fois rentré dans le main) -->
-    <section class="landing">
+    <header class="landing-page">
       <div class="slogan">
         <div class="my-name">Alessia Scaccia</div>
         <div class="my-title-web">Web Application Developer</div>
         <div class="my-title-trad">Translator and Interpreter</div>
         <div class="choice-language">
           <ul class="d-flex">
-            <li><a class="language-button" id="en">en</a></li>
-            <li><a class="language-button" id="fr">fr</a></li>
-            <li><a class="language-button" id="nl">nl</a></li>
+            <li><a class="language-button landing" id="en">en</a></li>
+            <li><a class="language-button landing" id="fr">fr</a></li>
+            <li><a class="language-button landing" id="nl">nl</a></li>
           </ul>
         </div>
       </div>
-    </section>
-    <!-- Main : contient rubriques, sections, nav et footer -->
+    </header>
     <main>
-      <div class="open cache" title="Menu">
+      <!-- open/close buttons -->
+      <div class="closed"><i class="fas fa-times"></i></div>
+      <div class="open hide" title="Menu">
         <i class="fas fa-bars"></i>
       </div>
       <!-- rubriques : top part with title, bottom part with content -->
@@ -131,8 +133,7 @@
       </footer>
 
       <!-- menu lateral-->
-      <nav class="nav-bar">
-        <div class="close"><i class="fas fa-times"></i></div>
+      <nav class="nav-bar show">
         <div class="nav-bar-links">
           <ul class="d-flex">
             <li><a href="#contact" class="nav-link contact">contact</a></li>
