@@ -2,15 +2,14 @@ import './style.scss';
 // import $ from 'jquery';
 // import axios from 'axios';
 import { tradMenu } from './src/trad';
-import { skills } from './src/skills';
-import { landingView } from './views/landing';
 import { aboutView } from './views/about';
+import { webView } from './views/web';
 
 const nav = document.querySelector('.nav-bar');
 const langButtons = document.querySelectorAll('.language-button');
 const openButton = document.querySelector('.open');
 const closeButton = document.querySelector('.closed');
-const allRubriques = document.querySelector('.all-rubriques');
+const allSections = document.querySelector('.all-sections');
 
 // --- changement de langue --- //
 // clic sur l'icone de la langue
@@ -23,14 +22,9 @@ for (langButton of langButtons) {
   langButton.addEventListener('click', (e) => {
     console.log(e.currentTarget.id);
     currentLanguage = e.currentTarget.id;
-    menu = `<div class="nav-bar-links"><ul class="d-flex"><li><a href="#contact" class="nav-link contact">contact</a></li><li><a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a></li><li><a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a></li><li><a href="#web-dev" class="nav-link web-dev">${tradMenu[currentLanguage].web}</a></li><li><a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a></li></ul></div>`;
-    nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
 
-    // go to page "about" if click on landing page
-    // if (e.currentTarget.classList.contains('landing')) {
-    //   allRubriques.innerHTML += aboutView;
-    //   console.log(aboutView);
-    // }
+    // eslint-disable-next-line no-use-before-define
+    render();
   });
 }
 
@@ -49,19 +43,47 @@ document.body.addEventListener('click', (e) => {
   }
 });
 
-// générer les skill cards (section web-dev)
-const htmlSkillsContainer = document.querySelector('.it-skills');
-let container = '<div class="skill-container d-flex">';
+// // générer les skill cards (section web-dev)
+// const htmlSkillsContainer = document.querySelector('.it-skills');
+// let container = '<div class="skill-container">';
 
-for (const skill of skills) {
-  let skillCard = `<div class="card">
-  <h3 class="skill-group">${skill.group}</h3>
-  <ul>`;
-  for (let i = 0; i < skill.name.length; i++) {
-    skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
-  }
-  skillCard += '</ul></div>';
-  container += skillCard;
+// for (const skill of skills) {
+//   let skillCard = `<div class="card">
+//   <h3 class="skill-group">${skill.group}</h3>
+//   <ul>`;
+//   for (let i = 0; i < skill.name.length; i++) {
+//     skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
+//   }
+//   skillCard += '</ul></div>';
+//   container += skillCard;
+// }
+// container += '</div>';
+// htmlSkillsContainer.innerHTML += container;
+
+function render() {
+  menu = `
+    <div class="nav-bar-links">
+      <ul class="d-flex">
+        <li>
+          <a href="#contact" class="nav-link contact">contact</a>
+        </li>
+        <li>
+          <a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a>
+        </li>
+        <li>
+        <a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a>
+        </li>
+        <li>
+        <a href="#web-dev" class="nav-link web-dev">${tradMenu[currentLanguage].web}</a>
+        </li>
+        <li>
+        <a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a>
+        </li>
+      </ul>
+    </div>`;
+  nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
+  allSections.innerHTML = aboutView(currentLanguage);
+  allSections.innerHTML += webView(currentLanguage);
 }
-container += '</div>';
-htmlSkillsContainer.innerHTML += container;
+
+render();

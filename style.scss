@@ -1,12 +1,6 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 // @import "node_modules/bootstrap/scss/bootstrap";
-
-/* variables */
-$primary-orange: rgb(233, 97, 12);
-$primary-white: rgb(244, 229, 220);
-$primary-black: #0e0603;
-$accent-orange: rgb(209, 121, 66);
-$background-black: rgb(29, 26, 26);
+@import "./styles/variable";
 
 /* general settings */
 * {
