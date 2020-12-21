@@ -2,6 +2,7 @@ import './style.scss';
 // import $ from 'jquery';
 // import axios from 'axios';
 import { tradMenu } from './src/trad';
+import { skills } from './src/skills';
 import { landingView } from './views/landing';
 import { aboutView } from './views/about';
 
@@ -33,8 +34,8 @@ for (langButton of langButtons) {
   });
 }
 
+// --- cache/montre barre nav --- //
 document.body.addEventListener('click', (e) => {
-  // --- cache/montre barre nav --- //
   if (e.target.matches('.fa-times')) {
     console.log('close ok');
     nav.classList.replace('.show', '.hide');
@@ -47,3 +48,20 @@ document.body.addEventListener('click', (e) => {
     closeButton.classList.toggle('hide');
   }
 });
+
+// générer les skill cards (section web-dev)
+const htmlSkillsContainer = document.querySelector('.it-skills');
+let container = '<div class="skill-container d-flex">';
+
+for (const skill of skills) {
+  let skillCard = `<div class="card">
+  <h3 class="skill-group">${skill.group}</h3>
+  <ul>`;
+  for (let i = 0; i < skill.name.length; i++) {
+    skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
+  }
+  skillCard += '</ul></div>';
+  container += skillCard;
+}
+container += '</div>';
+htmlSkillsContainer.innerHTML += container;

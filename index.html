@@ -47,13 +47,13 @@
     <main>
       <!-- allSections : top part with title, bottom part with content -->
       <section class="all-sections">
-        <section class="about">
+        <section class="rubrique about">
           <div class="section-top">
             <a name="about"></a>
-            <h1>about me</h1>
+            <h1>about<span class="accent"> me</span></h1>
           </div>
           <div class="section-content">
-            <div class="my-photo"></div>
+            <div class="photo-box my-photo"></div>
             <div class="description">
               <p>
                 I am a
@@ -81,6 +81,22 @@
                 continue improving my skills.
               </p>
             </div>
+            <button class="btn-contact">
+              <a href="#contact">Get in touch</a>
+            </button>
+          </div>
+        </section>
+        <section class="rubrique web-dev">
+          <div class="section-top">
+            <a name="web-dev"></a>
+            <h1><span class="accent">web</span> development</h1>
+          </div>
+          <div class="section-content">
+            <div class="photo-box programming"></div>
+            <div class="it-skills">
+              <h3>it skills</h3>
+              <!-- cards generated in JS-->
+            </div>
           </div>
         </section>
       </section>
@@ -88,11 +104,11 @@
       <!-- footer -->
       <footer>
         <div class="row d-flex">
-          <div class="link-languages">
+          <div class="link-languages hide">
             <ul class="d-flex">
-              <li class="language-button" id="en">en</li>
-              <li class="language-button" id="fr">fr</li>
-              <li class="language-button" id="nl">nl</li>
+              <li class="language-button" id="en">english</li>
+              <li class="language-button" id="fr">français</li>
+              <li class="language-button" id="nl">nederlands</li>
             </ul>
           </div>
           <div class="copyright">&copy; Alessia Scaccia 2021</div>
@@ -121,7 +137,7 @@
       </footer>
 
       <!-- menu lateral-->
-      <nav class="nav-bar show">
+      <nav class="nav-bar hide">
         <div class="nav-bar-links">
           <ul class="d-flex">
             <li><a href="#contact" class="nav-link contact">contact</a></li>
