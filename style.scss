@@ -26,7 +26,7 @@ body {
 }
 
 body {
-  font-family: Bebas Neue, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Avenir-Roman, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -43,6 +43,18 @@ aside,
 main,
 section {
   display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer,
+header,
+nav {
+  font-family: Bebas Neue, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
 
@@ -52,6 +64,7 @@ audio {
 }
 
 a {
+  display: block;
   text-decoration: none;
   background-color: transparent;
 }
@@ -62,6 +75,17 @@ i {
   font-weight: 100;
 }
 
+/* button basic settings */
+button {
+  font-weight: 200;
+  font-size: 10pt;
+  padding: 20px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -70,15 +94,10 @@ header {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   /* my slogan */
   .slogan {
+    padding-left: 5px;
     .my-name {
       letter-spacing: 0.1rem;
       font-size: 3rem;
-    }
-    .my-title-web {
-      font-size: 1.5rem;
-    }
-    .my-title-trad {
-      font-size: 1rem;
     }
   }
   /* language buttons */
@@ -175,17 +194,40 @@ header {
 /* sections rubriques */
 
 .all-sections {
-  margin-top: 100px;
+  margin-top: 180px;
+
   h1 {
-    text-align: left;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-character;
   }
   .section-top {
     background-color: $primary-black;
   }
   .section-content {
-    background-color: $primary-white;
+    padding: 0px 5%;
   }
   .about {
+    .my-photo {
+      background-image: url("./static/alessia-41.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 400px;
+    }
+    .description {
+      padding-top: 2.5rem;
+    }
   }
   .web-dev {
   }
@@ -197,6 +239,12 @@ header {
   }
 }
 
+footer {
+  background-color: $primary-orange;
+  color: $primary-white;
+  width: 100%;
+  letter-spacing: 0.05rem;
+}
 /* MEDIA-QUERIES */
 
 /* variables */
@@ -214,12 +262,19 @@ $xl: 1280px; //desktop
   }
 }
 
+/* view for desktop and laptop */
 @media only screen and (min-width: $lg) {
   .landing-page,
   .nav-bar,
   footer {
     visibility: visible;
   }
+
+  i {
+    font-size: 2.4rem;
+    font-weight: 100;
+  }
+
   /* landing page */
   @keyframes colorFade {
     from {
