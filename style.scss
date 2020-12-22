@@ -1,91 +1,7 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 // @import "node_modules/bootstrap/scss/bootstrap";
 @import "./styles/variable";
-
-/* general settings */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  min-height: 100%;
-}
-
-.d-flex {
-  display: flex;
-}
-
-body {
-  font-family: Avenir-Roman, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: left;
-  background-color: $background-black;
-  color: $primary-white;
-}
-
-header,
-nav,
-footer,
-ul,
-li,
-aside,
-main,
-section {
-  display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-footer,
-header,
-nav {
-  font-family: Bebas Neue, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-transform: uppercase;
-}
-
-video,
-audio {
-  display: inline-block;
-}
-
-a {
-  display: block;
-  text-decoration: none;
-  color: $primary-white;
-  background-color: transparent;
-}
-
-i {
-  font-size: 2.4rem;
-  color: $primary-white;
-  font-weight: 100;
-}
-
-/* button basic settings */
-button {
-  font-weight: 200;
-  font-size: 10pt;
-  padding: 15px;
-  color: white;
-  border: none;
-  border-radius: 2px;
-  text-transform: uppercase;
-}
-
-button:hover,
-button:focus {
-  border: 1px solid $primary-white;
-}
+@import "./styles/base";
 
 header {
   position: fixed;
@@ -260,13 +176,39 @@ header {
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
+      margin-top: 20px;
 
       .card {
-        background-color: $primary-white;
+        justify-items: center;
+        background-color: $card-color;
         color: $primary-black;
-        margin: 50px;
-        width: 50%;
-        height: 200px;
+        margin: 30px 10px;
+        width: 300px;
+        text-align: center;
+        border-radius: 10%;
+        padding: 30px;
+      }
+
+      .card:hover {
+        border: 3px solid $accent-orange;
+      }
+
+      ul {
+        margin: auto;
+        text-align: center;
+      }
+      .skill-group {
+        color: $primary-orange;
+        padding: 5%;
+        letter-spacing: 5px;
+        font-size: 1.5rem;
+      }
+      .skill-name {
+        padding: 10px 0px;
+        margin: 0px 30px;
+        letter-spacing: 3px;
+        border-bottom: 1px solid $accent-orange;
+        font-size: 1rem;
       }
     }
   }

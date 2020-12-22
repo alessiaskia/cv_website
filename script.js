@@ -43,23 +43,6 @@ document.body.addEventListener('click', (e) => {
   }
 });
 
-// // générer les skill cards (section web-dev)
-// const htmlSkillsContainer = document.querySelector('.it-skills');
-// let container = '<div class="skill-container">';
-
-// for (const skill of skills) {
-//   let skillCard = `<div class="card">
-//   <h3 class="skill-group">${skill.group}</h3>
-//   <ul>`;
-//   for (let i = 0; i < skill.name.length; i++) {
-//     skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
-//   }
-//   skillCard += '</ul></div>';
-//   container += skillCard;
-// }
-// container += '</div>';
-// htmlSkillsContainer.innerHTML += container;
-
 function render() {
   menu = `
     <div class="nav-bar-links">
