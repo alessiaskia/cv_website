@@ -30,15 +30,30 @@ document.body.addEventListener('click', (e) => {
 
 export const webView = (lang) => `
 <section class="rubrique web-dev">
-    <div class="section-top">
+  <div class="section-top">
         <a name="web-dev"></a>
         <h1>${tradWeb[lang].web} <span class="accent">${tradWeb[lang].development}</span> </h1>
-    </div>
-    <div class="section-content skills">
-        <div class="photo-box programming"></div>
-        <div class="it-skills">
-              <h2>${tradWeb[lang].it}</h2>
-              ${container}
+  </div>
+  <div class="section-content skills">
+    <div class="photo-box programming"></div>
+      <div class="it-skills">
+        <h2>${tradWeb[lang].it}</h2>
+        ${container}
+      </div>
+  </div>
+    <div class="section-content portfolio">
+      <div class="portfolio">
+        <h2>portfolio</h2>
+        <div class="project-box d-flex flex-wrap justify-center">
+          <div class="card project">
+            <p>Hackathon</p>
+          </div>
+          <div class="card project"><p>Javascript</p></div>
+          <div class="card project"><p>Php (Symphony)</p></div>
+          <div class="card project"><p>C# (ASP.Net)</p></div>
+          <div class="card project"><p>PHP (procedural)</p></div>
+          <div class="card project"><p>PHP (POO)</p></div>
         </div>
+      </div>
     </div>
 </section>`;

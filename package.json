@@ -14,6 +14,7 @@
     "axios": "0.20.0",
     "bootstrap": "4.5.3",
     "jquery": "3.5.1",
+    "slidr": "0.0.1",
     "trad": "^0.2.0"
   },
   "devDependencies": {

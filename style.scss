@@ -154,6 +154,22 @@ header {
   .section-content {
     padding: 10% 5%;
   }
+
+  .card {
+    justify-items: center;
+    background-color: $card-color;
+    color: $primary-black;
+    margin: 30px 10px;
+    width: 300px;
+    height: max-content;
+    text-align: center;
+    border-radius: 3%;
+    padding: 10px;
+  }
+
+  .card:hover {
+    border: 3px solid $accent-orange;
+  }
   .about {
     margin-top: 150px;
     .my-photo {
@@ -177,22 +193,6 @@ header {
       justify-content: center;
       width: 100%;
       margin-top: 20px;
-
-      .card {
-        justify-items: center;
-        background-color: $card-color;
-        color: $primary-black;
-        margin: 30px 10px;
-        width: 200px;
-        height: max-content;
-        text-align: center;
-        border-radius: 3%;
-        padding: 10px;
-      }
-
-      .card:hover {
-        border: 3px solid $accent-orange;
-      }
 
       ul {
         margin: auto;
@@ -220,6 +220,19 @@ header {
 
       .show-more {
         cursor: pointer;
+      }
+    }
+
+    .project-box {
+      .card {
+        width: 280px;
+        height: 200px;
+        margin: 5px;
+      }
+      p {
+        padding-top: 30%;
+        padding-bottom: 40%;
+        text-align: center;
       }
     }
   }

@@ -41,7 +41,7 @@ export const skills = [
     name: ['Apache', ' IIS'],
   },
   {
-    group: 'project management',
+    group: 'PM',
     icon: '<i class="show-more fas fa-tasks"></i>',
     name: ['Mockup', ' Ergonomics', ' Hosting', ' SEO referencing', ' RAD & SCRUM'],
   },
