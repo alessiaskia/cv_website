@@ -48,7 +48,7 @@ export const tradAbout = {
     p1: 'Ik ben een <strong>Junior Web Application Developer (Full-Stack)</strong> met een grote ervaring als taaldienstverlener en klantenservice medevewerker, met een Masteropleiding in Conferentietolken.',
     p2: 'Dankzij mijn studie-, levens- en werkervaringen in vier Europese landen, heb ik een echte globale mentaliteit ontwikkeld, leerde ik om me makkelijk aan nieuwe situaties aan te passen en kreeg ik de moed om uitdagingen aan te gaan.',
     p3: 'Na meer dan 7 jaar professionele ervaring als<strong>vertalster, conferentietolk en taalkundig</strong>, besloot ik om de wereld van web programming te ontdekken, met een Web application development voltijdse opleiding bij <strong>Interface3</strong> (Brussel).',
-    p4: 'Tegenwoordig zoek ik op een <strong>stageplaats in juni-jui 2021</strong> om mijn vaardigheden te verbeteren.',
+    p4: 'Tegenwoordig zoek ik op een <strong>stageplaats in juni-juli 2021</strong> om mijn vaardigheden te verbeteren.',
     contact: 'neem contact op',
   },
 };

@@ -183,10 +183,11 @@ header {
         background-color: $card-color;
         color: $primary-black;
         margin: 30px 10px;
-        width: 300px;
+        width: 200px;
+        height: max-content;
         text-align: center;
-        border-radius: 10%;
-        padding: 30px;
+        border-radius: 3%;
+        padding: 10px;
       }
 
       .card:hover {
@@ -202,13 +203,23 @@ header {
         padding: 5%;
         letter-spacing: 5px;
         font-size: 1.5rem;
+        line-height: 1.5rem;
       }
       .skill-name {
         padding: 10px 0px;
         margin: 0px 30px;
         letter-spacing: 3px;
-        border-bottom: 1px solid $accent-orange;
+        border-bottom: 1px solid $primary-white;
         font-size: 1rem;
+      }
+
+      i {
+        padding: 10px;
+        font-size: 3rem;
+      }
+
+      .show-more {
+        cursor: pointer;
       }
     }
   }
