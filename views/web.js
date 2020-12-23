@@ -15,7 +15,7 @@ for (const skill of skills) {
     <div class="card">
     ${skill.icon}
     <h3 class="skill-group show-more">${skill.group}</h3>
-    <ul class="hide">`;
+    <ul class="hide show">`;
   for (let i = 0; i < skill.name.length; i++) {
     skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
   }
