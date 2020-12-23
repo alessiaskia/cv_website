@@ -28,7 +28,7 @@ export const skills = [
   {
     group: 'tools',
     icon: '<i class="show-more fas fa-tools"></i>',
-    name: ['Visual Studio', ' Visual Studio Code', ' XAMPP', ' Unit Testing', ' GIT'],
+    name: ['Visual Studio', ' Visual Studio Code', ' XAMPP', ' Visual Paradigm', ' Unit Testing', ' GIT'],
   },
   {
     group: 'cms',
@@ -44,5 +44,10 @@ export const skills = [
     group: 'PM',
     icon: '<i class="show-more fas fa-tasks"></i>',
     name: ['Mockup', ' Ergonomics', ' Hosting', ' SEO referencing', ' RAD & SCRUM'],
+  },
+  {
+    group: 'design',
+    icon: '<i class="show-more fas fa-pencil-ruler"></i>',
+    name: ['Adobe InDesign', 'Adobe Photoshop', 'GIMP'],
   },
 ];

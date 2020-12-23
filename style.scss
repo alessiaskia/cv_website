@@ -91,10 +91,6 @@ header {
   animation-duration: 0.8s;
 }
 
-.hide {
-  display: none;
-}
-
 /* burger menu */
 .open,
 .closed {
@@ -148,11 +144,19 @@ header {
     height: 400px;
     margin-bottom: 50px;
   }
+
   .section-top {
     background-color: $primary-black;
   }
+
   .section-content {
     padding: 10% 5%;
+  }
+
+  .btn-orange {
+    background-color: $accent-orange;
+    margin-left: 30vw;
+    margin-top: 30px;
   }
 
   .card {
@@ -160,7 +164,7 @@ header {
     background-color: $card-color;
     color: $primary-black;
     margin: 30px 10px;
-    width: 300px;
+    width: 40%;
     height: max-content;
     text-align: center;
     border-radius: 3%;
@@ -175,24 +179,35 @@ header {
     .my-photo {
       background-image: url("./static/alessia-41.jpg");
     }
-
-    .btn-contact {
-      background-color: $accent-orange;
-      margin-left: 30vw;
-      margin-top: 30px;
-    }
   }
+
   .web-dev {
     .programming {
       background-image: url("./static/alessia-12.jpg");
     }
-    .skill-container {
+    .popup {
+      position: fixed;
+      bottom: 10%;
+      border: 1px solid $primary-white;
+      border-radius: 3%;
+      background-color: $primary-black;
+      width: 380px;
+      height: max-content;
+
+      .btn-orange {
+        padding: 15px 30px;
+        margin: 0 42% 10% 42%;
+      }
+    }
+    .skill-container,
+    .project-box {
       background-color: $primary-black;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
       margin-top: 20px;
+      padding: 30px 10px;
 
       ul {
         margin: auto;
@@ -201,16 +216,14 @@ header {
       .skill-group {
         color: $primary-orange;
         padding: 5%;
+        margin-bottom: 10px;
         letter-spacing: 5px;
-        font-size: 1.5rem;
         line-height: 1.5rem;
       }
       .skill-name {
-        padding: 10px 0px;
-        margin: 0px 30px;
+        padding: 10px;
         letter-spacing: 3px;
         border-bottom: 1px solid $primary-white;
-        font-size: 1rem;
       }
 
       i {
@@ -229,10 +242,26 @@ header {
         height: 200px;
         margin: 5px;
       }
-      p {
+      .project-title {
         padding-top: 30%;
         padding-bottom: 40%;
         text-align: center;
+        letter-spacing: 3px;
+      }
+
+      ul {
+        padding: 20px;
+      }
+      .project-li {
+        color: $accent-orange;
+        letter-spacing: 2px;
+        padding: 10px;
+        text-align: center;
+        a {
+          text-decoration: underline;
+          padding: 0px;
+          color: $primary-white;
+        }
       }
     }
   }
