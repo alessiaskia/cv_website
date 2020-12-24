@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 export const projects = [
   {
-    title: 'Hackathon Game',
+    title: 'Balise Man - The Game',
     img: 'grotta.jpg',
     language: 'JQuery',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nemo dolorum soluta enim in.',

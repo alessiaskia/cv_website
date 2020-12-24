@@ -59,17 +59,20 @@ export const tradWeb = {
     development: 'development',
     it: 'IT Skills',
     group: ['web', 'languages', 'frameworks', 'databases', 'analysis', 'tools', 'cms', 'servers', 'project management'],
+    written: 'Written mainly in ',
   },
   fr: {
     web: 'développement',
     development: 'web',
     it: 'compétences informatiques',
     group: ['web', 'langages', 'frameworks', 'bases de données', 'analyse', 'outils', 'cms', 'serveurs', 'gestion de projets'],
+    written: 'Développé principalement en ',
   },
   nl: {
     web: 'web',
     development: 'development',
     it: 'IT vaardigheden',
     group: ['web', 'programmeertalen', 'frameworks', 'databases', 'analyse', 'tools', 'cms', 'servers', 'projectbeheer'],
+    written: 'Ontwikkeld met ',
   },
 };

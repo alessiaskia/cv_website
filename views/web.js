@@ -14,7 +14,7 @@ for (const skill of skills) {
   let skillCard = `
     <div class="card">
     ${skill.icon}
-    <h3 class="skill-group show-more">${skill.group}</h3>
+    <h3 class="skill-group show-more cursor-pointer">${skill.group}</h3>
     <ul class="hide show">`;
   for (let i = 0; i < skill.name.length; i++) {
     skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
@@ -46,7 +46,7 @@ document.body.addEventListener('click', (e) => {
     const projectToShow = projects[selectedProject.id];
     popup = `<div class="popup show">
     <ul>
-      <li class="project-li language">Written mainly in: <strong>${projectToShow.language}</strong></li>
+      <li class="project-li language">Written mainly in <strong>${projectToShow.language}</strong></li>
       <li class="project-li">${projectToShow.description}</li>
       <li class="project-li git">
         <a href="${projectToShow.github}" target="_blank">Link to Github</a>
