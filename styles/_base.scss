@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  font-family: Avenir-Roman, sans-serif;
+  font-family: Avenir-Roman, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -102,6 +102,7 @@ button {
 button:hover,
 button:focus {
   border: 1px solid $primary-white;
+  cursor: pointer;
 }
 
 .hide {

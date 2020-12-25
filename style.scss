@@ -153,10 +153,11 @@ header {
     padding: 10% 5%;
   }
 
-  .btn-orange {
-    background-color: $accent-orange;
-    margin-left: 30vw;
-    margin-top: 30px;
+  .black-box {
+    background-color: $primary-black;
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 10px;
   }
 
   .card {
@@ -173,7 +174,36 @@ header {
 
   .card:hover {
     border: 3px solid $accent-orange;
+    cursor: pointer;
   }
+
+  .title-cards {
+    color: $primary-orange;
+    padding-top: 5%;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    line-height: 1.5rem;
+  }
+
+  i {
+    padding: 10px;
+    font-size: 3rem;
+  }
+
+  .btn-orange {
+    background-color: $accent-orange;
+    margin-left: 23vw;
+    margin-top: 30px;
+    padding: 15px 30px;
+  }
+
+  .btn-more {
+    padding: 8px 10px;
+    margin: 20px 5px;
+    background-color: $accent-orange;
+    font-size: 0.6rem;
+  }
+
   .about {
     margin-top: 150px;
     .my-photo {
@@ -193,80 +223,97 @@ header {
       background-color: $primary-black;
       width: 380px;
       height: max-content;
-
       .btn-orange {
-        padding: 15px 30px;
-        margin: 0 42% 10% 42%;
+        margin: 5vw 40vw;
+        padding: 12px;
       }
     }
-    .skill-container,
-    .project-box {
-      background-color: $primary-black;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+
+    ul {
+      margin: auto;
+      padding: 10px 0px;
       width: 100%;
-      margin-top: 20px;
-      padding: 30px 10px;
-
-      ul {
-        margin: auto;
-        text-align: center;
-      }
-      .skill-group {
-        color: $primary-orange;
-        padding-top: 5%;
-        margin-bottom: 10px;
-        letter-spacing: 5px;
-        line-height: 1.5rem;
-      }
-      .skill-name {
-        padding: 10px;
-        letter-spacing: 3px;
-        border-bottom: 1px solid $primary-white;
-      }
-
-      i {
-        padding: 10px;
-        font-size: 3rem;
-      }
+      text-align: center;
     }
 
-    .project-box {
-      .card {
-        width: 280px;
-        height: 200px;
-        margin: 5px;
-      }
-      .project-title {
-        padding-top: 30%;
-        padding-bottom: 40%;
-        text-align: center;
-        letter-spacing: 3px;
-      }
-
-      ul {
-        padding: 20px;
-      }
-      .project-li {
-        color: $accent-orange;
-        letter-spacing: 2px;
-        padding: 10px;
-        text-align: center;
-        a {
-          text-decoration: underline;
-          padding: 0px;
-          color: $primary-white;
-        }
-      }
+    .skill-name {
+      padding: 10px;
+      letter-spacing: 3px;
+      border-bottom: 1px solid $primary-white;
+      text-align: center;
     }
   }
-  .translation {
+
+  .project-box {
+    .card {
+      width: 280px;
+      height: 200px;
+      margin: 5px;
+    }
   }
-  .background {
+
+  .project-title {
+    padding-top: 30%;
+    padding-bottom: 40%;
+    text-align: center;
+    letter-spacing: 3px;
   }
-  .contact {
+
+  ul {
+    padding: 20px;
   }
+  .project-li {
+    color: $accent-orange;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-align: center;
+    a {
+      text-decoration: underline;
+      padding: 0px;
+      color: $primary-white;
+    }
+  }
+}
+
+.translation {
+  .conference {
+    background-image: url("./static/conference.jpg");
+  }
+
+  .services-box {
+    .card {
+      width: 280px;
+      height: max-content;
+      margin: 5px;
+    }
+
+    .card:hover {
+      border: none;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin: 5px 0;
+    }
+    h4 {
+      letter-spacing: 1px;
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    a {
+      font-size: 14px;
+      line-height: 25px;
+      margin-top: 30px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.background {
+}
+.contact {
 }
 
 footer {

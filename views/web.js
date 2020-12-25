@@ -3,8 +3,8 @@ import { skills } from '../src/skills';
 import { projects } from '../src/projects';
 
 /* eslint-disable import/prefer-default-export */
-let skillContainer = '<div class="skill-container d-flex flex-row">';
-let projectBox = '<div class="project-box d-flex flex-wrap justify-center">';
+let skillContainer = '<div class="skill-container black-box d-flex flex-wrap justify-center">';
+let projectBox = '<div class="project-box d-flex flex-wrap justify-center black-box">';
 let projectID = 0;
 let popup = '';
 
@@ -14,7 +14,7 @@ for (const skill of skills) {
   let skillCard = `
     <div class="card">
     ${skill.icon}
-    <h3 class="skill-group show-more cursor-pointer">${skill.group}</h3>
+    <h3 class="skill-group show-more cursor-pointer title-cards">${skill.group}</h3>
     <ul class="hide show">`;
   for (let i = 0; i < skill.name.length; i++) {
     skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
@@ -39,7 +39,6 @@ projectBox += '</div>';
 document.body.addEventListener('click', (e) => {
   if (e.target.matches('.show-more')) {
     const competences = e.target.parentNode.children[2];
-    // console.log(competences);
     competences.classList.toggle('hide');
   } else if (e.target.matches('.project-title')) {
     const selectedProject = e.target.parentNode;

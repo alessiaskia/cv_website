@@ -10,7 +10,7 @@ export const aboutView = (lang) => `
     </div>
     <div class="section-content">
     <div class="photo-box my-photo"></div>
-    <div class="description">
+    <div class="description black-box">
         <p>
         ${tradAbout[lang].p1}
         </p>

@@ -4,6 +4,7 @@ import './style.scss';
 import { tradMenu } from './src/trad';
 import { aboutView } from './views/about';
 import { webView } from './views/web';
+import { translationView } from './views/translation';
 
 const nav = document.querySelector('.nav-bar');
 const langButtons = document.querySelectorAll('.language-button');
@@ -67,6 +68,7 @@ function render() {
   nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
   allSections.innerHTML = aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
+  allSections.innerHTML += translationView(currentLanguage);
 }
 
 render();
