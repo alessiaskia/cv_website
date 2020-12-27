@@ -126,9 +126,6 @@ header {
     margin: auto;
   }
 
-  .accent {
-    color: $accent-orange;
-  }
   p {
     font-size: 14px;
     line-height: 25px;
@@ -136,8 +133,22 @@ header {
     font-weight: 400;
     letter-spacing: 1px;
     text-align: justify;
-    text-justify: inter-character;
+    //text-justify: inter-character;
   }
+
+  i {
+    padding: 10px;
+    font-size: 3rem;
+    color: $primary-white;
+    &:hover {
+      color: $primary-white-hover;
+    }
+  }
+
+  .accent {
+    color: $accent-orange;
+  }
+
   .photo-box {
     background-size: cover;
     width: 100%;
@@ -185,13 +196,15 @@ header {
     line-height: 1.5rem;
   }
 
-  i {
-    padding: 10px;
-    font-size: 3rem;
+  .btn-orange,
+  .btn-more {
+    background-color: $accent-orange;
+    &:hover {
+      background-color: $accent-orange-hover;
+    }
   }
 
   .btn-orange {
-    background-color: $accent-orange;
     margin-left: 23vw;
     margin-top: 30px;
     padding: 15px 30px;
@@ -200,7 +213,6 @@ header {
   .btn-more {
     padding: 8px 10px;
     margin: 20px 5px;
-    background-color: $accent-orange;
     font-size: 0.6rem;
   }
 
@@ -237,8 +249,9 @@ header {
     }
 
     .skill-name {
-      padding: 10px;
+      font-size: 0.9rem;
       letter-spacing: 3px;
+      padding: 10px;
       border-bottom: 1px solid $primary-white;
       text-align: center;
     }
@@ -257,6 +270,10 @@ header {
     padding-bottom: 40%;
     text-align: center;
     letter-spacing: 3px;
+    color: $primary-black;
+    &:hover {
+      color: $primary-orange;
+    }
   }
 
   ul {
