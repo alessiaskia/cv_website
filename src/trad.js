@@ -137,3 +137,11 @@ export const tradTranslation = {
     proz: 'Bezoek mijn professionele profiel op ProZ.com',
   },
 };
+
+export const tradBackground = {
+  en: {
+    my: 'my',
+    background: 'background',
+  },
+
+};

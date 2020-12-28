@@ -328,7 +328,45 @@ header {
 }
 
 .background {
+  .card {
+    width: 280px;
+    height: 200px;
+    margin: 5px;
+    border-radius: unset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .card:hover {
+      border: unset;
+    }
+  }
+
+  .trieste {
+    background-image: url(./static/ts-porto.jpg);
+  }
+  .barcelona {
+    background-image: url(./static/gotic.jpg);
+  }
+  .zagreb {
+    background-image: url(./static/kat.jpg);
+  }
+  .bruxelles {
+    background-image: url(./static/comic.jpg);
+  }
+  .mons {
+    background-image: url(./static/mons.jpg);
+  }
 }
+ul {
+  list-style-type: square;
+  text-align: left;
+}
+li {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
 .contact {
 }
 

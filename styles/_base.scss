@@ -48,8 +48,6 @@ body {
 header,
 nav,
 footer,
-ul,
-li,
 aside,
 main,
 section,
@@ -73,6 +71,10 @@ nav {
 video,
 audio {
   display: inline-block;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {

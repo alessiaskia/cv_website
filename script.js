@@ -69,7 +69,7 @@ function render() {
       </div>`;
   nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
   footer.innerHTML = footerContent;
-  allSections.innerHTML = aboutView(currentLanguage);
+  allSections.innerHTML += aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
   allSections.innerHTML += translationView(currentLanguage);
 }
