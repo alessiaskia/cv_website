@@ -4,7 +4,7 @@ export const projects = [
     title: 'Balise Man - The Game',
     img: 'grotta.jpg',
     language: 'JQuery',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nemo dolorum soluta enim in.',
+    description: 'A trivial pursuit-/goose game-inspired project, developed during the Hackathon 2020 at Interface3, with three peers from the Front-End and Game Development sections.',
     github: 'https://github.com/alessiaskia/hackathon2020',
   },
   {
@@ -18,7 +18,7 @@ export const projects = [
     title: 'Covid speech generator',
     img: 'grotta.jpg',
     language: 'PHP (procedural)',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nemo dolorum soluta enim in.',
+    description: 'A silly and ironic way of practising making web forms in PHP.',
     github: 'https://github.com/alessiaskia/covid_speech_generator',
   },
   {

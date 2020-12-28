@@ -7,42 +7,13 @@ import { webView } from './views/web';
 import { translationView } from './views/translation';
 
 const nav = document.querySelector('.nav-bar');
-const langButtons = document.querySelectorAll('.language-button');
 const openButton = document.querySelector('.open');
 const closeButton = document.querySelector('.closed');
 const allSections = document.querySelector('.all-sections');
-
-// --- changement de langue --- //
-// clic sur l'icone de la langue
-// change les elements du menu
-
+const footer = document.querySelector('footer');
 let menu = document.querySelector('.nav-bar-links');
+let footerContent = document.querySelector('.row');
 let currentLanguage = 'en';
-let langButton;
-for (langButton of langButtons) {
-  langButton.addEventListener('click', (e) => {
-    console.log(e.currentTarget.id);
-    currentLanguage = e.currentTarget.id;
-
-    // eslint-disable-next-line no-use-before-define
-    render();
-  });
-}
-
-// --- cache/montre barre nav --- //
-document.body.addEventListener('click', (e) => {
-  if (e.target.matches('.fa-times')) {
-    console.log('close ok');
-    nav.classList.replace('.show', '.hide');
-    closeButton.classList.toggle('hide');
-    openButton.classList.toggle('hide');
-  } else if (e.target.matches('.fa-bars')) {
-    console.log('open ok');
-    nav.classList.replace('.hide', '.show');
-    openButton.classList.toggle('hide');
-    closeButton.classList.toggle('hide');
-  }
-});
 
 function render() {
   menu = `
@@ -65,10 +36,63 @@ function render() {
         </li>
       </ul>
     </div>`;
+
+  footerContent = `
+    <div class="row d-flex">
+          <div class="link-languages">
+              <ul class="d-flex">
+                  <li class="language-button cursor-pointer" id="en">en</li>
+                  <li class="language-button cursor-pointer" id="fr">fr</li>
+                  <li class="language-button cursor-pointer" id="nl">nl</li>
+              </ul>
+          </div>
+          <div class="copyright">&copy; Alessia Scaccia 2021</div>
+          <div class="link-icons">
+              <ul class="d-flex">
+                  <li title="CV">
+                      <a href="src/${tradMenu[currentLanguage].cv}" target="_blank">
+                          <i class="fas fa-file-download"></i>
+                      </a>
+                  </li>
+                  <li title="LinkedIn">
+                      <a href="https://www.linkedin.com/in/alessia-scaccia/" target="_blank">
+                          <i class="fab fa-linkedin"></i>
+                      </a>
+                  </li>
+                  <li title="GitHub">
+                      <a href="https://github.com/alessiaskia" target="_blank">
+                          <i class="fab fa-github"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>`;
   nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
+  footer.innerHTML = footerContent;
   allSections.innerHTML = aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
   allSections.innerHTML += translationView(currentLanguage);
 }
 
 render();
+
+document.body.addEventListener('click', (e) => {
+  if (e.target.matches('.language-button')) {
+    currentLanguage = e.target.id;
+    console.log(currentLanguage);
+    console.log(footer.innerHTML);
+    e.preventDefault();
+    render();
+    // --- cache/montre barre nav --- //
+  } else if (e.target.matches('.fa-times')) {
+    console.log('close ok');
+    nav.classList.replace('.show', '.hide');
+    closeButton.classList.toggle('hide');
+    openButton.classList.toggle('hide');
+  } else if (e.target.matches('.fa-bars')) {
+    console.log('open ok');
+    nav.classList.replace('.hide', '.show');
+    openButton.classList.toggle('hide');
+    closeButton.classList.toggle('hide');
+  }
+});

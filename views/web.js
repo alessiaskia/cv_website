@@ -27,8 +27,8 @@ skillContainer += '</div>';
 // create portfolio cards
 for (const project of projects) {
   const projectCard = `
-  <div class="card project" id="${projectID}">
-    <h3 class="project-title">${project.title}</h3>
+  <div class="card project cursor-pointer" id="${projectID}">
+    <h3 class="project-title cursor-pointer">${project.title}</h3>
   </div>`;
   projectID++;
   projectBox += projectCard;

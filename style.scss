@@ -32,7 +32,6 @@ header {
     top: 30%;
     left: 90%;
     transform: translate(-50%, -50%);
-    cursor: pointer;
     transition: 0.5s ease;
     height: 50px;
     &:hover .bar {
@@ -141,7 +140,7 @@ header {
     font-size: 3rem;
     color: $primary-white;
     &:hover {
-      color: $primary-white-hover;
+      color: $primary-orange;
     }
   }
 
@@ -185,7 +184,6 @@ header {
 
   .card:hover {
     border: 3px solid $accent-orange;
-    cursor: pointer;
   }
 
   .title-cards {
@@ -236,7 +234,8 @@ header {
       width: 380px;
       height: max-content;
       .btn-orange {
-        margin: 5vw 40vw;
+        margin-left: 45%;
+        margin-bottom: 5%;
         padding: 12px;
       }
     }
@@ -294,7 +293,7 @@ header {
 
 .translation {
   .conference {
-    background-image: url("./static/conference.jpg");
+    background-image: url("./static/headset.jpg");
   }
 
   .services-box {
@@ -342,7 +341,7 @@ footer {
   letter-spacing: 0.05rem;
   margin-top: 150px;
   li {
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   .row {

@@ -6,6 +6,7 @@ export const tradMenu = {
     translation: 'translation',
     background: 'background',
     contact: 'contact',
+    cv: 'alessia_scaccia_cv_EN.pdf',
   },
   fr: {
     about: 'à propos',
@@ -13,6 +14,7 @@ export const tradMenu = {
     translation: 'traduction',
     background: 'parcours',
     contact: 'contact',
+    cv: 'alessia_scaccia_cv_FR.pdf',
   },
   nl: {
     about: 'over mij',
@@ -20,6 +22,7 @@ export const tradMenu = {
     translation: 'vertaling',
     background: 'achtergrond',
     contact: 'contact',
+    cv: 'alessia_scaccia_cv_NL.pdf',
   },
 };
 
@@ -38,7 +41,7 @@ export const tradAbout = {
     me: 'de moi',
     p1: 'Je suis une <strong>Junior Web Application Developer (Full-Stack)</strong> avec une longue expérience en tant que prestataire de services linguistiques et assistante à la clientèle, avec une maîtrise en Interprétation de Conférence.',
     p2: "Avoir étudié, travaillé et habité dans quatre pays européens m'a permis de développer une véritable mentalité internationale, la capacité de m'adapter à toute situation et le courage de relever de nouveaux défis.",
-    p3: "Après plus de 7 ans d'expérience professionnelle en tant que <strong>traductrice, interprète et spécialiste du language</strong>, j'ai décidé de me découvrir le monde de la programmation, avec un programme de formation à temps plein chez <strong>Interface3</strong> (Bruxelles).",
+    p3: "Après plus de 7 ans d'expérience professionnelle en tant que <strong>traductrice, interprète et spécialiste du language</strong>, j'ai décidé de découvrir le monde de la programmation, avec un programme de formation à temps plein chez <strong>Interface3</strong> (Bruxelles).",
     p4: 'À présent, je cherche un <strong>stage de 6 à 8 semaines pendant les mois de juin-juillet 2021</strong> pour continuer à améliorer mes compétences dans ce domaine.',
     contact: 'contactez-moi',
   },
