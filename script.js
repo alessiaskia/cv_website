@@ -5,6 +5,7 @@ import { tradMenu } from './src/trad';
 import { aboutView } from './views/about';
 import { webView } from './views/web';
 import { translationView } from './views/translation';
+import { backgroundView } from './views/background';
 
 const nav = document.querySelector('.nav-bar');
 const openButton = document.querySelector('.open');
@@ -72,6 +73,7 @@ function render() {
   allSections.innerHTML += aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
   allSections.innerHTML += translationView(currentLanguage);
+  allSections.innerHTML += backgroundView(currentLanguage);
 }
 
 render();

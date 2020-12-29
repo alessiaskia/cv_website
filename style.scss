@@ -329,24 +329,53 @@ header {
 
 .background {
   .card {
-    width: 280px;
-    height: 200px;
+    width: 50%;
+    height: max-content;
     margin: 5px;
+    padding: 5px;
     border-radius: unset;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
     .card:hover {
       border: unset;
     }
+
+    h3 {
+      color: $primary-orange;
+    }
+
+    ul {
+      list-style-type: square;
+      text-align: left;
+      padding: 3px 1px 1px 10px;
+      text-align: left;
+    }
+    li {
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      line-height: 1.2rem;
+      padding: 3px 1px;
+    }
+    a {
+      color: black;
+      text-decoration: underline;
+      display: inline;
+    }
+  }
+
+  .postcard {
+    width: 320px;
+    height: 340px;
   }
 
   .trieste {
     background-image: url(./static/ts-porto.jpg);
   }
   .barcelona {
-    background-image: url(./static/gotic.jpg);
+    background-image: url(./static/bcn-gracia.jpg);
   }
   .zagreb {
     background-image: url(./static/kat.jpg);
@@ -358,16 +387,25 @@ header {
     background-image: url(./static/mons.jpg);
   }
 }
-ul {
-  list-style-type: square;
-  text-align: left;
-}
-li {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-}
 
 .contact {
+  .main-container {
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .field,
+  .field-input,
+  textarea {
+    width: 380px;
+    margin: 10px;
+    font-family: Avenir-Roman, Arial, sans-serif !important;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
 }
 
 footer {

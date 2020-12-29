@@ -47,127 +47,53 @@
     <main>
       <!-- allSections : top part with title, bottom part with content -->
       <section class="all-sections">
-        <section class="rubrique background">
+        <section class="rubrique contact">
           <div class="section-top">
-            <a name="background"></a>
-            <h3>My <span class="accent">background</span></h3>
+            <a name="contact"></a>
+            <h1>contact<span class="accent"> me</span></h1>
           </div>
           <div class="section-content">
-            <div class="card-box d-flex flex-row">
-              <div class="card content">
-                <h3>2009</h3>
-                <ul>
-                  <li>high school degree</li>
-                  <li>start univ</li>
-                </ul>
-              </div>
-              <div class="card postcard trieste"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2011</h3>
-                <ul>
-                  <li>zagreb</li>
-                  <li>holland</li>
-                </ul>
-              </div>
-              <div class="card postcard zagreb"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2012</h3>
-                <ul>
-                  <li>erasmus</li>
-                  <li>first volunteering</li>
-                  <li>start translation</li>
-                </ul>
-              </div>
-              <div class="card postcard mons"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2013</h3>
-                <ul>
-                  <li>BA degree</li>
-                  <li>Move to bcn</li>
-                  <li>job clinic</li>
-                  <li>officially start translating</li>
-                </ul>
-              </div>
-              <div class="card postcard barcelona"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2014</h3>
-                <ul>
-                  <li>quit job</li>
-                  <li>admitted to MA</li>
-                </ul>
-              </div>
-              <div class="card postcard trieste"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2016</h3>
-                <ul>
-                  <li>zagreb again</li>
-                  <li>first interpreting assignments</li>
-                  <li>volunteer agape</li>
-                </ul>
-              </div>
-              <div class="card postcard zagreb"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2017</h3>
-                <ul>
-                  <li>MA degree</li>
-                  <li>Move to BXL</li>
-                  <li>capstan</li>
-                  <li>LV</li>
-                </ul>
-              </div>
-              <div class="card postcard bruxelles"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2018</h3>
-                <ul>
-                  <li>cigna</li>
-                </ul>
-              </div>
-              <div class="card postcard bruxelles"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2019</h3>
-                <ul>
-                  <li>quit cigna</li>
-                  <li>start freelance pm</li>
-                </ul>
-              </div>
-              <div class="card postcard bruxelles"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2020</h3>
-                <ul>
-                  <li>omi</li>
-                  <li>wad</li>
-                </ul>
-              </div>
-              <div class="card postcard bruxelles"></div>
-            </div>
-            <div class="card-box d-flex flex-row">
-              <div class="card">
-                <h3>2021</h3>
-                <ul>
-                  <li>wad expected</li>
-                  <li>stage</li>
-                </ul>
-              </div>
-              <div class="card postcard bruxelles"></div>
-            </div>
+            <form
+              action="https://formspree.io/f/xjvpppen"
+              method="POST"
+              class="main-container"
+            >
+              <label class="field">
+                <input
+                  class="field-input"
+                  placeholder="Your name"
+                  name="name"
+                  required
+                />
+              </label>
+
+              <label class="field">
+                <input
+                  class="field-input"
+                  placeholder="ex. aless.scaccia@gmail.com"
+                  name="email"
+                  required
+                />
+              </label>
+
+              <textarea
+                name="message"
+                placeholder="Your message"
+                id="msg"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+
+              <button
+                type="submit"
+                value="Send"
+                id="btn-formulaire"
+                class="btn-orange"
+              >
+                Thank you
+              </button>
+            </form>
           </div>
         </section>
       </section>
