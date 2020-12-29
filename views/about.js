@@ -23,9 +23,9 @@ export const aboutView = (lang) => `
         <p>
         ${tradAbout[lang].p4}
         </p>
+        <button class="btn-contact btn-orange">
+            <a href="#contact">${tradAbout[lang].contact}</a>
+        </button>
     </div>
-    <button class="btn-contact btn-orange">
-        <a href="#contact">${tradAbout[lang].contact}</a>
-    </button>
     </div>
 </section>`;

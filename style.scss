@@ -106,13 +106,15 @@ header {
 /* sections rubriques */
 
 .all-sections {
+  width: 100%;
+
   .rubrique {
     margin-top: 100px;
   }
 
   h1 {
     text-align: right;
-    padding-right: 10px;
+    //padding-right: 10px;
     padding-top: 60px;
     font-size: 3.5rem;
     letter-spacing: 5px;
@@ -159,9 +161,9 @@ header {
     background-color: $primary-black;
   }
 
-  .section-content {
-    padding: 10% 5%;
-  }
+  // .section-content {
+  //   padding: 10% 5%;
+  // }
 
   .black-box {
     background-color: $primary-black;
@@ -203,7 +205,7 @@ header {
   }
 
   .btn-orange {
-    margin-left: 23vw;
+    margin-left: 30vw;
     margin-top: 30px;
     padding: 15px 30px;
   }
@@ -389,7 +391,7 @@ header {
 }
 
 .contact {
-  .main-container {
+  .contact-box {
     padding: 30px;
     margin: 30px;
     text-align: center;
@@ -398,13 +400,15 @@ header {
   .field,
   .field-input,
   textarea {
-    width: 380px;
+    width: 300px;
     margin: 10px;
     font-family: Avenir-Roman, Arial, sans-serif !important;
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 1px;
-    text-align: center;
+  }
+  .btn-orange {
+    margin-left: unset;
   }
 }
 

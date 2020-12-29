@@ -221,3 +221,30 @@ export const tradBackground = {
     job: '...and hopefully get my first job as a developer?',
   },
 };
+
+export const tradContact = {
+  en: {
+    contact: 'contact',
+    me: 'me',
+    placeholderName: 'Your name',
+    placeholderEmail: 'Your email',
+    placeholderMsg: 'Your message',
+    thanks: 'Thank you',
+  },
+  fr: {
+    contact: 'contactez',
+    me: 'moi',
+    placeholderName: 'Votre nom',
+    placeholderEmail: 'Votre email',
+    placeholderMsg: 'Votre message',
+    thanks: 'Merci',
+  },
+  nl: {
+    contact: 'contacteer',
+    me: 'me',
+    placeholderName: 'Uw naam',
+    placeholderEmail: 'Uw email',
+    placeholderMsg: 'Uw bericht',
+    thanks: 'Bedankt',
+  },
+};

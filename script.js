@@ -6,6 +6,7 @@ import { aboutView } from './views/about';
 import { webView } from './views/web';
 import { translationView } from './views/translation';
 import { backgroundView } from './views/background';
+import { contactView } from './views/contact';
 
 const nav = document.querySelector('.nav-bar');
 const openButton = document.querySelector('.open');
@@ -70,10 +71,11 @@ function render() {
       </div>`;
   nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
   footer.innerHTML = footerContent;
-  allSections.innerHTML += aboutView(currentLanguage);
+  allSections.innerHTML = aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
   allSections.innerHTML += translationView(currentLanguage);
   allSections.innerHTML += backgroundView(currentLanguage);
+  allSections.innerHTML += contactView(currentLanguage);
 }
 
 render();
