@@ -1,5 +1,8 @@
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-alert */
 /* eslint-disable import/prefer-default-export */
 // eslint-disable-next-line import/prefer-default-export
+import { render } from 'sass';
 import { tradContact } from '../src/trad';
 
 export const contactView = (lang) => `
@@ -45,10 +48,16 @@ export const contactView = (lang) => `
                 id="btn-formulaire"
                 class="btn-orange"
                 target="_blank">
-                ${tradContact[lang].thanks}
+                ${tradContact[lang].send}
             </button>
         </div>
         </form>
     </div>
 </section>
 `;
+
+document.body.addEventListener('click', (e) => {
+  if (e.target.matches('#btn-formulaire')) {
+    render();
+  }
+});

@@ -229,7 +229,8 @@ export const tradContact = {
     placeholderName: 'Your name',
     placeholderEmail: 'Your email',
     placeholderMsg: 'Your message',
-    thanks: 'Thank you',
+    send: 'Send',
+    msgOk: 'Thank you for your message',
   },
   fr: {
     contact: 'contactez',
@@ -237,7 +238,8 @@ export const tradContact = {
     placeholderName: 'Votre nom',
     placeholderEmail: 'Votre email',
     placeholderMsg: 'Votre message',
-    thanks: 'Merci',
+    send: 'Envoyer',
+    msgOk: 'Merci de votre message',
   },
   nl: {
     contact: 'contacteer',
@@ -245,6 +247,7 @@ export const tradContact = {
     placeholderName: 'Uw naam',
     placeholderEmail: 'Uw email',
     placeholderMsg: 'Uw bericht',
-    thanks: 'Bedankt',
+    send: 'Versturen',
+    msgOk: 'Bedankt voor uw bericht',
   },
 };
