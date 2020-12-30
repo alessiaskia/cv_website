@@ -1,8 +1,8 @@
+/* eslint-disable no-useless-concat */
 /* eslint-disable no-restricted-globals */
 /* eslint-disable no-alert */
 /* eslint-disable import/prefer-default-export */
 // eslint-disable-next-line import/prefer-default-export
-import { render } from 'sass';
 import { tradContact } from '../src/trad';
 
 export const contactView = (lang) => `
@@ -12,15 +12,14 @@ export const contactView = (lang) => `
         <h1>${tradContact[lang].contact} <span class="accent">${tradContact[lang].me}</span></h1>
     </div>
     <div class="section-content">
-        <form
+        <form id="formaction"
         action="https://formspree.io/f/xjvpppen"
         method="POST"
         class="main-container"
         >
         <div class="contact-box">
             <label class="field">
-                <input
-                    class="field-input"
+                <input class="field-input"
                     maxlenght="60"
                     placeholder="${tradContact[lang].placeholderName}"
                     name="name"
@@ -42,9 +41,8 @@ export const contactView = (lang) => `
 
             <textarea name="message" maxlenght="500" placeholder="${tradContact[lang].placeholderMsg}" id="msg" cols="20" rows="10" required></textarea>
 
-            <button
-                type="submit"
-                value="Send"
+            <button type="submit" 
+                value="send"
                 id="btn-formulaire"
                 class="btn-orange"
                 target="_blank">
@@ -55,9 +53,3 @@ export const contactView = (lang) => `
     </div>
 </section>
 `;
-
-document.body.addEventListener('click', (e) => {
-  if (e.target.matches('#btn-formulaire')) {
-    render();
-  }
-});

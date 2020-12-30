@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import './style.scss';
 // import $ from 'jquery';
 // import axios from 'axios';
@@ -16,6 +17,7 @@ const footer = document.querySelector('footer');
 let menu = document.querySelector('.nav-bar-links');
 let footerContent = document.querySelector('.row');
 let currentLanguage = 'en';
+const textArea = document.querySelector('textarea');
 
 function render() {
   menu = `
@@ -98,5 +100,7 @@ document.body.addEventListener('click', (e) => {
     nav.classList.replace('.hide', '.show');
     openButton.classList.toggle('hide');
     closeButton.classList.toggle('hide');
+  } else if (e.target.matches('#btn-formulaiure')) {
+    textArea.innerHTML = '';
   }
 });
