@@ -22,23 +22,30 @@ const textArea = document.querySelector('textarea');
 function render() {
   menu = `
     <div class="nav-bar-links">
-      <ul class="d-flex">
+      <ul class="list-rubriques">
         <li>
-          <a href="#contact" class="nav-link contact">contact</a>
-        </li>
-        <li>
-          <a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a>
-        </li>
-        <li>
-        <a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a>
+        <a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a>
         </li>
         <li>
         <a href="#web-dev" class="nav-link web-dev">${tradMenu[currentLanguage].web}</a>
         </li>
         <li>
-        <a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a>
+        <a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a>
+        </li>
+        <li>
+        <a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link contact">${tradMenu[currentLanguage].contact}</a>
         </li>
       </ul>
+      <div class="choice-language">
+        <ul class="d-flex flex-row">
+          <li><a id="en">en</a></li>
+          <li><a id="fr">fr</a></li>
+          <li><a id="nl">nl</a></li>
+        </ul>
+      </div>
     </div>`;
 
   footerContent = `
@@ -72,12 +79,12 @@ function render() {
           </div>
       </div>`;
   nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
-  footer.innerHTML = footerContent;
   allSections.innerHTML = aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
   allSections.innerHTML += translationView(currentLanguage);
   allSections.innerHTML += backgroundView(currentLanguage);
   allSections.innerHTML += contactView(currentLanguage);
+  footer.innerHTML = footerContent;
 }
 
 render();

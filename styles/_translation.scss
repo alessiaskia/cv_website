@@ -1,0 +1,52 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+.translation {
+  .conference {
+    background-image: url("./static/headset.jpg");
+  }
+
+  .services-box {
+    .card {
+      width: 280px;
+      height: max-content;
+      margin: 5px;
+    }
+
+    .card:hover {
+      border: none;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin: 5px 0;
+    }
+    h4 {
+      letter-spacing: 1px;
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    a {
+      font-size: 14px;
+      line-height: 25px;
+      margin-top: 30px;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+}

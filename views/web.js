@@ -43,16 +43,17 @@ document.body.addEventListener('click', (e) => {
   } else if (e.target.matches('.project-title')) {
     const selectedProject = e.target.parentNode;
     const projectToShow = projects[selectedProject.id];
-    popup = `<div class="popup show">
-    <ul>
-      <li class="project-li language">Written mainly in <strong>${projectToShow.language}</strong></li>
-      <li class="project-li">${projectToShow.description}</li>
-      <li class="project-li git">
-        <a href="${projectToShow.github}" target="_blank">Link to Github</a>
-      </li>
-    </ul>
-          <button class="close btn-orange">X</button>
-      </div></div>`;
+    popup = `
+            <div class="popup show">
+                <ul>
+                  <li class="project-li language">Written mainly in <strong>${projectToShow.language}</strong></li>
+                  <li class="project-li">${projectToShow.description}</li>
+                  <li class="project-li git">
+                    <a href="${projectToShow.github}" target="_blank">Link to Github</a>
+                  </li>
+                </ul>
+              <button class="close btn-orange">X</button>
+            </div>`;
     const spaceForPopup = document.querySelector('.project-box');
     spaceForPopup.innerHTML += popup;
   } else if (e.target.matches('.close')) {

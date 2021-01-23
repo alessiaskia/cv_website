@@ -1,0 +1,148 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary-orange;
+  opacity: 0.9;
+  .nav-bar-links {
+    ul {
+      display: block;
+      width: 100%;
+      height: 90%;
+      list-style-type: none;
+      text-align: center;
+    }
+    li {
+      padding: 2% 2% 8% 2%;
+    }
+    a {
+      text-align: center;
+      color: $primary-black;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      font-weight: 500;
+      width: auto;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+      -webkit-transition: all 0.6s;
+      -moz-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+    a:hover,
+    a:focus {
+      font-weight: 800;
+      font-size: 2.2rem;
+      color: white;
+    }
+
+    // a:active {                     *momentaneamente in sospeso*
+    //   border: 5px solid $primary-black;
+    // }
+  }
+
+  .choice-language {
+    ul {
+      display: flex;
+      justify-content: space-around;
+    }
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+/* view for tablets */
+@media only screen and (min-width: $md) {
+  .nav-bar-links {
+    li {
+      padding: unset;
+      padding-top: 5%;
+    }
+
+    a {
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 500;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+      -webkit-transition: all 0.6s;
+      -moz-transition: all 0.6s;
+      transition: all 0.6s;
+    }
+    a:hover,
+    a:focus {
+      font-weight: 800;
+      font-size: 2.2rem;
+    }
+  }
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .nav-bar {
+    background-color: $primary-orange;
+    color: $primary-white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5%;
+
+    .nav-bar-links {
+      ul {
+        display: flex;
+        height: 85%;
+        justify-content: space-around;
+        position: absolute;
+        margin-top: 5px;
+        left: 25%;
+        top: 5%;
+        list-style-type: none;
+        writing-mode: vertical-rl;
+        text-align: right;
+        background-color: $primary-black;
+        transform: rotate(180deg);
+      }
+      li {
+        margin: 8px;
+      }
+
+      a {
+        color: $primary-white;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        font-weight: 500;
+      }
+      a:hover {
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+      a:hover,
+      a:focus,
+      a:active {
+        margin-right: 100px;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+
+      a:active {
+        border: 2.5px solid $primary-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.background {
+  .section-content {
+    .card {
+      width: 50%;
+      height: max-content;
+      margin: 5px;
+      padding: 5px;
+      border-radius: unset;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
+      background-position: center;
+      .card:hover {
+        border: unset;
+      }
+
+      h3 {
+        color: $primary-orange;
+      }
+
+      ul {
+        list-style-type: square;
+        text-align: left;
+        padding: 3px 1px 1px 10px;
+        text-align: left;
+      }
+      li {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        line-height: 1.2rem;
+        padding: 3px 1px;
+      }
+      a {
+        color: black;
+        text-decoration: underline;
+        display: inline;
+      }
+    }
+    .postcard {
+      width: 320px;
+      height: 380px;
+    }
+
+    .trieste {
+      background-image: url(./static/ts-porto.jpg);
+    }
+    .barcelona {
+      background-image: url(./static/bcn-gracia.jpg);
+    }
+    .zagreb {
+      background-image: url(./static/kat.jpg);
+    }
+    .bruxelles1 {
+      background-image: url(./static/bruxelles.jpeg);
+    }
+    .bruxelles2 {
+      background-image: url(./static/comic.jpg);
+    }
+    .bruxelles3 {
+      background-image: url(./static/flagey.jpg);
+    }
+    .bruxelles4 {
+      background-image: url(./static/horta.jpg);
+    }
+    .bruxelles5 {
+      background-image: url(./static/galeries.jpg);
+    }
+    .mons {
+      background-image: url(./static/mons.jpg);
+    }
+  }
+}

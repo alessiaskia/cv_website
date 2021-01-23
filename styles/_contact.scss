@@ -1,0 +1,42 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+
+.contact {
+  .btn-orange {
+    margin-left: 0;
+  }
+  .contact-box {
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  form {
+    padding-right: 200vh;
+  }
+  .field,
+  .field-input,
+  textarea {
+    width: 280px;
+    margin-bottom: 10px;
+    font-family: Avenir-Roman, Arial, sans-serif !important;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+}

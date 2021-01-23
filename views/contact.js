@@ -11,7 +11,7 @@ export const contactView = (lang) => `
         <a name="contact"></a>
         <h1>${tradContact[lang].contact} <span class="accent">${tradContact[lang].me}</span></h1>
     </div>
-    <div class="section-content">
+    <div class="section-content black-box">
         <form id="formaction"
         action="https://formspree.io/f/xjvpppen"
         method="POST"
@@ -44,7 +44,7 @@ export const contactView = (lang) => `
             <button type="submit" 
                 value="send"
                 id="btn-formulaire"
-                class="btn-orange"
+                class="contact btn-orange"
                 target="_blank">
                 ${tradContact[lang].send}
             </button>

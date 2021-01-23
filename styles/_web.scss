@@ -1,0 +1,84 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+.web-dev {
+  .programming {
+    background-image: url("./static/alessia-12.jpg");
+  }
+  .popup {
+    position: fixed;
+    bottom: 10%;
+    border: 1px solid $primary-white;
+    border-radius: 3%;
+    background-color: $primary-black;
+    width: 380px;
+    height: max-content;
+    .btn-orange {
+      margin-left: 45%;
+      margin-bottom: 5%;
+      padding: 12px;
+    }
+  }
+
+  ul {
+    margin: auto;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    padding: 10px;
+    border-bottom: 1px solid $primary-white;
+    text-align: center;
+  }
+  .project-box {
+    .card {
+      width: 280px;
+      height: 200px;
+      margin: 5px;
+    }
+  }
+
+  .project-title {
+    padding-top: 30%;
+    padding-bottom: 40%;
+    text-align: center;
+    letter-spacing: 3px;
+    color: $primary-black;
+    &:hover {
+      color: $primary-orange;
+    }
+  }
+
+  ul {
+    padding: 20px;
+  }
+  .project-li {
+    color: $accent-orange;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-align: center;
+    a {
+      text-decoration: underline;
+      padding: 0px;
+      color: $primary-white;
+    }
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+}

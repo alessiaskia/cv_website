@@ -1,0 +1,22 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+.about {
+  .my-photo {
+    background-image: url("./static/alessia-41.jpg");
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+}

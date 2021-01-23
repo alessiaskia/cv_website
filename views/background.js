@@ -80,7 +80,7 @@ export const backgroundView = (lang) => `
             <li>${tradBackground[lang].lv}</li>
         </ul>
         </div>
-        <div class="card postcard bruxelles"></div>
+        <div class="card postcard bruxelles1"></div>
     </div>
     <div class="card-box d-flex flex-row justify-center">
         <div class="card">
@@ -89,7 +89,7 @@ export const backgroundView = (lang) => `
             <li>${tradBackground[lang].cigna}</li>
         </ul>
         </div>
-        <div class="card postcard bruxelles"></div>
+        <div class="card postcard bruxelles2"></div>
     </div>
     <div class="card-box d-flex flex-row justify-center">
         <div class="card">
@@ -98,7 +98,7 @@ export const backgroundView = (lang) => `
             <li>${tradBackground[lang].pm}</li>
         </ul>
         </div>
-        <div class="card postcard bruxelles"></div>
+        <div class="card postcard bruxelles3"></div>
     </div>
     <div class="card-box d-flex flex-row justify-center">
         <div class="card">
@@ -108,7 +108,7 @@ export const backgroundView = (lang) => `
             <li>${tradBackground[lang].wad}</li>
         </ul>
         </div>
-        <div class="card postcard bruxelles"></div>
+        <div class="card postcard bruxelles4"></div>
     </div>
     <div class="card-box d-flex flex-row justify-center">
         <div class="card">
@@ -118,7 +118,7 @@ export const backgroundView = (lang) => `
             <li>${tradBackground[lang].job}</li>
         </ul>
         </div>
-        <div class="card postcard bruxelles"></div>
+        <div class="card postcard bruxelles5"></div>
     </div>
     </div>
 </section>
