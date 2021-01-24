@@ -11,13 +11,19 @@ $xl: 1280px; //desktop
   .programming {
     background-image: url("./static/alessia-12.jpg");
   }
+
+  .portfolio {
+    padding-top: 20px;
+  }
+
   .popup {
-    position: fixed;
-    bottom: 10%;
+    position: absolute;
+    top: 50%;
     border: 1px solid $primary-white;
     border-radius: 3%;
     background-color: $primary-black;
-    width: 380px;
+    width: 100vw;
+    height: 100vh;
     height: max-content;
     .btn-orange {
       margin-left: 45%;
@@ -41,6 +47,7 @@ $xl: 1280px; //desktop
     text-align: center;
   }
   .project-box {
+    position: relative;
     .card {
       width: 280px;
       height: 200px;
@@ -59,9 +66,6 @@ $xl: 1280px; //desktop
     }
   }
 
-  ul {
-    padding: 20px;
-  }
   .project-li {
     color: $accent-orange;
     letter-spacing: 2px;

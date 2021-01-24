@@ -4,118 +4,18 @@
 @import "./styles/base";
 @import "./styles/nav";
 @import "./styles/footer";
-@import "./styles/landing";
+@import "./styles/header";
 @import "./styles/about";
 @import "./styles/web";
 @import "./styles/translation";
 @import "./styles/background";
 @import "./styles/contact";
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: $primary-orange;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  /* my slogan */
-  .slogan {
-    padding-left: 5px;
-    .my-name {
-      letter-spacing: 0.1rem;
-      font-size: 3rem;
-    }
-  }
-  /* language buttons */
-  .choice-language {
-    position: absolute;
-    top: 40%;
-    right: 5%;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  /* burger */
-  .menu {
-    position: absolute;
-    top: 30%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s ease;
-    height: 50px;
-    &:hover .bar {
-      box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.3);
-    }
-    .bar {
-      width: 35px;
-      height: 5px;
-      background: $primary-white;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-      border-radius: 2px;
-      transition: 0.4s ease;
-      &:not(:first-child) {
-        margin-top: 10px;
-      }
-    }
-  }
-  #hi {
-    position: absolute;
-    left: -999px;
-    top: -999px;
-  }
-  #hi:checked + .menu {
-    transform: translate(-50%, -50%) rotatey(180deg);
-    .bar {
-      transform: rotatey(180deg) rotatex(360deg);
-      &:first-child {
-        transform: rotate(-45deg);
-        margin-top: 20px;
-      }
-      &:nth-child(2) {
-        opacity: 0;
-      }
-      &:nth-child(3) {
-        margin-top: -30px;
-        transform: rotate(45deg);
-      }
-    }
-  }
-}
-
-/* show with slower transition */
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.show {
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: fade-in;
-  animation-duration: 0.8s;
-}
-
-/* burger menu */
-.open,
-.closed {
-  position: fixed;
-  left: 1vh;
-  top: 1vh;
-  opacity: 0.8;
-  margin: 1vw;
-  i {
-    font-weight: light;
-  }
-}
-
-/* sections rubriques */
+/* general rubriques */
 
 .all-sections {
   width: 100%;
-  margin-top: 150px;
+  margin-top: 50px;
 
   .rubrique {
     margin-top: 100px;
@@ -123,7 +23,6 @@ header {
 
   h1 {
     text-align: right;
-    padding-top: 60px;
     font-size: 3.5rem;
     letter-spacing: 5px;
   }
@@ -205,12 +104,6 @@ header {
     &:hover {
       background-color: $accent-orange-hover;
     }
-  }
-
-  .btn-orange {
-    margin-left: 30vw;
-    margin-top: 30px;
-    padding: 15px 30px;
   }
 
   .btn-more {

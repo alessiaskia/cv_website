@@ -1,4 +1,19 @@
 // eslint-disable-next-line import/prefer-default-export
+export const tradHeader = {
+  en: {
+    web: 'Web Application Developer',
+    trad: 'Translator / Interpreter',
+  },
+  fr: {
+    web: "Développeuse d'applications web",
+    trad: 'Traductrice / Interprète',
+  },
+  nl: {
+    web: 'Web Application Developer',
+    trad: 'Vertalster / Tolk',
+  },
+};
+
 export const tradMenu = {
   en: {
     about: 'about',

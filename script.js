@@ -2,7 +2,7 @@
 import './style.scss';
 // import $ from 'jquery';
 // import axios from 'axios';
-import { tradMenu } from './src/trad';
+import { tradHeader, tradMenu } from './src/trad';
 import { aboutView } from './views/about';
 import { webView } from './views/web';
 import { translationView } from './views/translation';
@@ -10,43 +10,53 @@ import { backgroundView } from './views/background';
 import { contactView } from './views/contact';
 
 const nav = document.querySelector('.nav-bar');
-const openButton = document.querySelector('.open');
-const closeButton = document.querySelector('.closed');
+const openButton = document.querySelector('.fa-bars');
+const closeButton = document.querySelector('.fa-times');
 const allSections = document.querySelector('.all-sections');
 const footer = document.querySelector('footer');
 let menu = document.querySelector('.nav-bar-links');
+let headerContent = document.querySelector('.header-content');
+const header = document.querySelector('.landing-page');
 let footerContent = document.querySelector('.row');
 let currentLanguage = 'en';
 const textArea = document.querySelector('textarea');
 
 function render() {
+  headerContent = `
+      <i class="fas fa-bars"></i>
+      <div class="slogan">
+        <h1 class="my-name">Alessia Scaccia</h1>
+        <p class="my-title-web">${tradHeader[currentLanguage].web}</p>
+        <p class="my-title-trad">${tradHeader[currentLanguage].trad}</p>
+      </div>`;
   menu = `
-    <div class="nav-bar-links">
-      <ul class="list-rubriques">
-        <li>
-        <a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a>
-        </li>
-        <li>
-        <a href="#web-dev" class="nav-link web-dev">${tradMenu[currentLanguage].web}</a>
-        </li>
-        <li>
-        <a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a>
-        </li>
-        <li>
-        <a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a>
-        </li>
-        <li>
-          <a href="#contact" class="nav-link contact">${tradMenu[currentLanguage].contact}</a>
-        </li>
-      </ul>
-      <div class="choice-language">
-        <ul class="d-flex flex-row">
-          <li><a id="en">en</a></li>
-          <li><a id="fr">fr</a></li>
-          <li><a id="nl">nl</a></li>
-        </ul>
-      </div>
-    </div>`;
+  <div class="nav-bar-links">
+    <i class="fas fa-times"></i>
+    <ul class="list-rubriques">
+    <li>
+      <a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a>
+    </li>
+    <li>
+      <a href="#web-dev" class="nav-link web-dev">${tradMenu[currentLanguage].web}</a>
+    </li>
+    <li>
+      <a href="#translation" class="nav-link translation">${tradMenu[currentLanguage].translation}</a>
+    </li>
+    <li>
+      <a href="#background" class="nav-link background">${tradMenu[currentLanguage].background}</a>
+    </li>
+    <li>
+      <a href="#contact" class="nav-link contact">${tradMenu[currentLanguage].contact}</a>
+    </li>
+  </ul>
+  <div class="choice-language">
+    <ul class="d-flex flex-row">
+      <li><a class="language-button" id="en">en</a></li>
+      <li><a class="language-button" id="fr">fr</a></li>
+      <li><a class="language-button" id="nl">nl</a></li>
+    </ul>
+  </div>
+</div>`;
 
   footerContent = `
     <div class="row d-flex">
@@ -78,13 +88,14 @@ function render() {
               </ul>
           </div>
       </div>`;
-  nav.innerHTML = `<div class="close"><i class="fas fa-times"></i></div>${menu}`;
+  nav.innerHTML = menu;
+  header.innerHTML = headerContent;
+  footer.innerHTML = footerContent;
   allSections.innerHTML = aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
   allSections.innerHTML += translationView(currentLanguage);
   allSections.innerHTML += backgroundView(currentLanguage);
   allSections.innerHTML += contactView(currentLanguage);
-  footer.innerHTML = footerContent;
 }
 
 render();
@@ -92,22 +103,24 @@ render();
 document.body.addEventListener('click', (e) => {
   if (e.target.matches('.language-button')) {
     currentLanguage = e.target.id;
-    console.log(currentLanguage);
-    console.log(footer.innerHTML);
+    // console.log(currentLanguage);
     e.preventDefault();
     render();
-    // --- cache/montre barre nav --- //
   } else if (e.target.matches('.fa-times')) {
+    // --- cache/montre barre nav --- //
+    // open -- fa-bars
+    // close -- fa-times
     console.log('close ok');
-    nav.classList.replace('.show', '.hide');
+    nav.classList.replace('show', 'hide');
     closeButton.classList.toggle('hide');
     openButton.classList.toggle('hide');
   } else if (e.target.matches('.fa-bars')) {
     console.log('open ok');
-    nav.classList.replace('.hide', '.show');
+    nav.classList.replace('hide', 'show');
     openButton.classList.toggle('hide');
     closeButton.classList.toggle('hide');
   } else if (e.target.matches('#btn-formulaiure')) {
+    // clean textarea form
     textArea.innerHTML = '';
   }
 });
