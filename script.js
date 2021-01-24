@@ -10,8 +10,6 @@ import { backgroundView } from './views/background';
 import { contactView } from './views/contact';
 
 const nav = document.querySelector('.nav-bar');
-const openButton = document.querySelector('.fa-bars');
-const closeButton = document.querySelector('.fa-times');
 const allSections = document.querySelector('.all-sections');
 const footer = document.querySelector('footer');
 let menu = document.querySelector('.nav-bar-links');
@@ -23,7 +21,7 @@ const textArea = document.querySelector('textarea');
 
 function render() {
   headerContent = `
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars open"></i>
       <div class="slogan">
         <h1 class="my-name">Alessia Scaccia</h1>
         <p class="my-title-web">${tradHeader[currentLanguage].web}</p>
@@ -31,7 +29,7 @@ function render() {
       </div>`;
   menu = `
   <div class="nav-bar-links">
-    <i class="fas fa-times"></i>
+    <i class="fas fa-times close"></i>
     <ul class="list-rubriques">
     <li>
       <a href="#about" class="nav-link about">${tradMenu[currentLanguage].about}</a>
@@ -59,7 +57,7 @@ function render() {
 </div>`;
 
   footerContent = `
-    <div class="row d-flex">
+        <div class="row d-flex">
           <div class="link-languages">
               <ul class="d-flex">
                   <li class="language-button cursor-pointer" id="en">en</li>
@@ -86,8 +84,7 @@ function render() {
                       </a>
                   </li>
               </ul>
-          </div>
-      </div>`;
+            </div>`;
   nav.innerHTML = menu;
   header.innerHTML = headerContent;
   footer.innerHTML = footerContent;
@@ -99,6 +96,8 @@ function render() {
 }
 
 render();
+const openButton = document.querySelector('.open');
+const closeButton = document.querySelector('.close');
 
 document.body.addEventListener('click', (e) => {
   if (e.target.matches('.language-button')) {
@@ -106,19 +105,23 @@ document.body.addEventListener('click', (e) => {
     // console.log(currentLanguage);
     e.preventDefault();
     render();
-  } else if (e.target.matches('.fa-times')) {
+  } else if (e.target.matches('.close')) {
     // --- cache/montre barre nav --- //
     // open -- fa-bars
     // close -- fa-times
     console.log('close ok');
     nav.classList.replace('show', 'hide');
-    closeButton.classList.toggle('hide');
-    openButton.classList.toggle('hide');
-  } else if (e.target.matches('.fa-bars')) {
+    closeButton.classList.add('hide');
+    openButton.classList.remove('hide');
+  } else if (e.target.matches('.open')) {
     console.log('open ok');
     nav.classList.replace('hide', 'show');
-    openButton.classList.toggle('hide');
+    openButton.classList.add('hide');
+    closeButton.classList.remove('hide');
+  } else if (e.target.matches('.nav-link')) {
+    nav.classList.replace('show', 'hide');
     closeButton.classList.toggle('hide');
+    openButton.classList.toggle('hide');
   } else if (e.target.matches('#btn-formulaiure')) {
     // clean textarea form
     textArea.innerHTML = '';

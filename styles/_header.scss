@@ -30,8 +30,11 @@ $xl: 1280px; //desktop
 .landing-page {
   display: flex;
   position: fixed;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
   top: 0px;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   background-color: $primary-orange;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
