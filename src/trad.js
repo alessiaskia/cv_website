@@ -123,7 +123,7 @@ export const tradTranslation = {
     knowMore: "Plus d'info",
     tradSpecialisations: 'Mes domaines de spécialisation sont :<br />rapports médicaux, informatique, communication commerciale et tourisme. <br /><br />',
     int: 'Interprétation',
-    intLangs: "Entre français, espagnol et italien<br />De l'anglais vers l'italien.",
+    intLangs: "Entre français, espagnol et italien<br />De l'anglais vers l'italien",
     sim: '<strong>Interprétation simultanée</strong>',
     knowMoreSim: 'lorem ipsum bla bla bla',
     cons: '<strong>Interprétation consécutive</strong>',

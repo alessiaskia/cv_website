@@ -48,6 +48,6 @@ export const skills = [
   {
     group: 'design',
     icon: '<i class="show-more cursor-pointer fas fa-pencil-ruler"></i>',
-    name: ['Adobe InDesign', 'Adobe Photoshop', 'GIMP'],
+    name: ['Adobe InDesign', 'Adobe Photoshop', 'Adobe XD'],
   },
 ];

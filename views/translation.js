@@ -10,8 +10,8 @@ document.body.addEventListener('click', (e) => {
 export const translationView = (lang) => `
 <section class="rubrique translation">
     <div class="section-top">
-        <a name="translation"></a>
-        <h1>${tradTranslation[lang].services1}<span class="accent"> ${tradTranslation[lang].services2}</span></h1>
+        <a name="translation" class="anchor"></a>
+        <h1>${tradTranslation[lang].services1}<br /><span class="accent"> ${tradTranslation[lang].services2}</span></h1>
     </div>
     <div class="section-content">
         <div class="photo-box conference"></div>

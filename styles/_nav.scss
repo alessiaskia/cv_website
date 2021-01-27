@@ -14,7 +14,6 @@ $xl: 1280px; //desktop
   width: 100vw;
   height: 100vh;
   background-color: $primary-orange;
-  opacity: 0.9;
   z-index: 1;
   .nav-bar-links {
     ul {
@@ -30,11 +29,12 @@ $xl: 1280px; //desktop
     }
     a {
       text-align: center;
-      color: $primary-black;
+      color: $primary-white;
       font-size: 2rem;
       letter-spacing: 0.2rem;
       font-weight: 500;
       width: auto;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     }
     a:hover,
     a:active {
@@ -46,11 +46,11 @@ $xl: 1280px; //desktop
     a:active {
       font-weight: 800;
       font-size: 2.2rem;
-      color: white;
+      color: $secondary-blue;
     }
 
     // a:active {                     *momentaneamente in sospeso*
-    //   border: 5px solid $primary-black;
+    //   border: 5px solid $primary-blue;
     // }
   }
 
@@ -87,7 +87,7 @@ $xl: 1280px; //desktop
           list-style-type: none;
           writing-mode: vertical-rl;
           text-align: right;
-          background-color: $primary-black;
+          background-color: $primary-blue;
           transform: rotate(180deg);
         }
         li {
@@ -114,7 +114,7 @@ $xl: 1280px; //desktop
         }
 
         a:active {
-          border: 2.5px solid $primary-white;
+          border: 2.5px solid $primary-blue;
         }
       }
     }

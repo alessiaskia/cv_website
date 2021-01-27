@@ -8,10 +8,10 @@ import { tradContact } from '../src/trad';
 export const contactView = (lang) => `
 <section class="rubrique contact">
     <div class="section-top">
-        <a name="contact"></a>
+        <a name="contact" class="anchor"></a>
         <h1>${tradContact[lang].contact} <span class="accent">${tradContact[lang].me}</span></h1>
     </div>
-    <div class="section-content black-box">
+    <div class="section-content">
         <form id="formaction"
         action="https://formspree.io/f/xjvpppen"
         method="POST"

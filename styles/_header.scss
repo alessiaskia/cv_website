@@ -23,7 +23,7 @@ $xl: 1280px; //desktop
 }
 
 .fa-times {
-  color: $primary-black;
+  color: $primary-blue;
   text-shadow: none;
 }
 
@@ -44,6 +44,7 @@ $xl: 1280px; //desktop
       letter-spacing: 0.4rem;
       font-size: 2.1rem;
       padding: 10px 0 0 60px;
+      color: $primary-white;
     }
     .my-title-web {
       display: none;
@@ -91,7 +92,7 @@ $xl: 1280px; //desktop
   @media only screen and (min-width: $lg) {
     @keyframes colorFade {
       from {
-        background-color: $primary-black;
+        background-color: $primary-blue;
       }
       to {
         background-color: $primary-orange;

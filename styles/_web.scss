@@ -12,8 +12,10 @@ $xl: 1280px; //desktop
     background-image: url("./static/alessia-12.jpg");
   }
 
-  .portfolio {
+  .portfolio,
+  .it-skills {
     padding-top: 20px;
+    background-color: $primary-blue;
   }
 
   .popup {
@@ -21,7 +23,7 @@ $xl: 1280px; //desktop
     top: 50%;
     border: 1px solid $primary-white;
     border-radius: 3%;
-    background-color: $primary-black;
+    background-color: $primary-blue;
     width: 100vw;
     height: 100vh;
     height: max-content;
@@ -60,7 +62,7 @@ $xl: 1280px; //desktop
     padding-bottom: 40%;
     text-align: center;
     letter-spacing: 3px;
-    color: $primary-black;
+    color: $primary-blue;
     &:hover {
       color: $primary-orange;
     }

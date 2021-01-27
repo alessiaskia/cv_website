@@ -69,8 +69,8 @@ document.body.addEventListener('click', (e) => {
 export const webView = (lang) => `
 <section class="rubrique web-dev">
   <div class="section-top">
-        <a name="web-dev"></a>
-        <h1>${tradWeb[lang].web} <span class="accent">${tradWeb[lang].development}</span> </h1>
+        <a name="web-dev" class="anchor"></a>
+        <h1>${tradWeb[lang].web}<br /><span class="accent">${tradWeb[lang].development}</span> </h1>
   </div>
   <div class="section-content skills">
     <div class="photo-box programming"></div>
