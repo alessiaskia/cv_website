@@ -41,8 +41,10 @@ export const translationView = (lang) => `
             </div>
             <a href="https://www.proz.com/profile/1718389 target="_blank">${tradTranslation[lang].proz}</a>
             </div>
-        <button class="btn-quote btn-orange">
-            <a href="#contact">${tradTranslation[lang].quote}</a>
-        </button>
+        <div class="button-box">
+            <button class="btn-quote btn-orange">
+                <a href="#contact">${tradTranslation[lang].quote}</a>
+            </button>
+        </div>
     </div>
 `;

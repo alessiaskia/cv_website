@@ -16,11 +16,11 @@ $xl: 1280px; //desktop
   background-color: $primary-orange;
   z-index: 1;
   .nav-bar-links {
-    ul {
+    .list-rubriques {
       display: block;
       width: 100%;
       height: 90%;
-      padding-top: 70px;
+      padding-top: 90px;
       list-style-type: none;
       text-align: center;
     }
@@ -58,6 +58,7 @@ $xl: 1280px; //desktop
     ul {
       display: flex;
       justify-content: space-around;
+      padding-top: 40px;
     }
     a {
       font-size: 1.5rem;

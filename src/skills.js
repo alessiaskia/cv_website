@@ -13,7 +13,7 @@ export const skills = [
   {
     group: 'frameworks',
     icon: '<i class="show-more cursor-pointer fas fa-network-wired"></i>',
-    name: ['ASP.Net', ' Symphony', ' React', ' Angular', ' Node JS'],
+    name: ['ASP.Net', ' Symfony', ' React', ' Angular', ' Node JS'],
   },
   {
     group: 'databases',

@@ -21,7 +21,7 @@ const textArea = document.querySelector('textarea');
 
 function render() {
   headerContent = `
-      <i class="fas fa-bars open"></i>
+      <i class="fas fa-bars menu-button show"></i>
       <div class="slogan">
         <h1 class="my-name">Alessia Scaccia</h1>
         <p class="my-title-web">${tradHeader[currentLanguage].web}</p>
@@ -96,8 +96,7 @@ function render() {
 }
 
 render();
-const openButton = document.querySelector('.open');
-const closeButton = document.querySelector('.close');
+const menuButton = document.querySelector('.menu-button');
 
 document.body.addEventListener('click', (e) => {
   if (e.target.matches('.language-button')) {
@@ -105,23 +104,23 @@ document.body.addEventListener('click', (e) => {
     // console.log(currentLanguage);
     e.preventDefault();
     render();
-  } else if (e.target.matches('.close')) {
+    console.log(menuButton.className);
+    menuButton.classList.replace('fa-bars', 'fa-times');
+    console.log(menuButton.className);
     // --- cache/montre barre nav --- //
     // open -- fa-bars
     // close -- fa-times
-    console.log('close ok');
-    nav.classList.replace('show', 'hide');
-    closeButton.classList.add('hide');
-    openButton.classList.remove('hide');
-  } else if (e.target.matches('.open')) {
+  } else if (e.target.matches('.fa-bars')) {
     console.log('open ok');
     nav.classList.replace('hide', 'show');
-    openButton.classList.add('hide');
-    closeButton.classList.remove('hide');
+    menuButton.classList.replace('fa-bars', 'fa-times');
+  } else if (e.target.matches('.fa-times')) {
+    console.log('close ok');
+    nav.classList.replace('show', 'hide');
+    menuButton.classList.replace('fa-times', 'fa-bars');
   } else if (e.target.matches('.nav-link')) {
     nav.classList.replace('show', 'hide');
-    closeButton.classList.toggle('hide');
-    openButton.classList.toggle('hide');
+    menuButton.classList.replace('fa-times', 'fa-bars');
   } else if (e.target.matches('#btn-formulaiure')) {
     // clean textarea form
     textArea.innerHTML = '';

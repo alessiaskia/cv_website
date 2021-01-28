@@ -13,9 +13,12 @@ $xl: 1280px; //desktop
   }
 
   .btn-orange {
-    margin-left: 30vw;
     margin-top: 30px;
     padding: 15px 30px;
+  }
+
+  .button-box {
+    text-align: center;
   }
 
   .services-box {
@@ -29,11 +32,14 @@ $xl: 1280px; //desktop
       border: none;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin: 5px 0;
+      padding: 20px 0;
     }
     h4 {
       letter-spacing: 1px;
+      font-size: 1.4rem;
+      padding: 15px 0;
     }
     p {
       margin-bottom: 20px;

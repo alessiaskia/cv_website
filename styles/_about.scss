@@ -8,12 +8,32 @@ $xl: 1280px; //desktop
 
 /* mobile */
 .about {
-  .my-photo {
+  .photo-box {
     background-image: url("./static/alessia-41.jpg");
+    // width: 80% !important;
+    // margin-left: 20px;
+    // margin-bottom: 0 !important;
+    // border: 2px solid $primary-blue;
   }
 
+  blockquote {
+    padding: 18% 0 6% 0;
+    opacity: 1;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 35px;
+    font-style: italic;
+    letter-spacing: 3px;
+  }
+
+  // .presentation {
+  //   background-color: $secondary-blue;
+  //   width: 100%;
+  //   padding: 20px 0px;
+  // }
+
   .btn-orange {
-    margin-left: 30vw;
+    // margin-left: 30vw;
     margin-top: 30px;
     padding: 15px 30px;
   }

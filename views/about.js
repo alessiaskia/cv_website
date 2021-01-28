@@ -1,4 +1,4 @@
-import { tradAbout } from '../src/trad';
+import { tradAbout, tradMenu } from '../src/trad';
 
 /* eslint-disable import/prefer-default-export */
 
@@ -9,11 +9,13 @@ export const aboutView = (lang) => `
     <h1>${tradAbout[lang].about} <span class="accent"> ${tradAbout[lang].me}</span></h1>
     </div>
     <div class="section-content">
-    <div class="photo-box my-photo"></div>
-    <div class="description black-box">
-        <p>
+    <div class="presentation">
+        <blockquote>
         ${tradAbout[lang].p1}
-        </p>
+        </blockquote>
+        <div class="photo-box my-photo"></div>
+    </div>
+    <div class="description black-box">
         <p>
         ${tradAbout[lang].p2}
         </p>
@@ -23,9 +25,14 @@ export const aboutView = (lang) => `
         <p>
         ${tradAbout[lang].p4}
         </p>
-        <button class="btn-contact btn-orange">
-            <a href="#contact">${tradAbout[lang].contact}</a>
-        </button>
+        <div class="button-box d-flex justify-around">
+            <button class="btn-contact btn-orange">
+                <a href="#contact">${tradAbout[lang].contact}</a>
+            </button>
+            <button class="btn-contact btn-orange">
+                <a href="src/${tradMenu[lang].cv}" target="_blank"> CV </a>
+            </button>
+        </div>
     </div>
     </div>
 </section>`;

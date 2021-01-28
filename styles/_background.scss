@@ -10,9 +10,6 @@
       background-size: cover;
       background-attachment: scroll;
       background-position: center;
-      .card:hover {
-        border: unset;
-      }
 
       h3 {
         color: $primary-orange;
@@ -31,7 +28,7 @@
         padding: 3px 1px;
       }
       a {
-        color: black;
+        color: $primary-orange !important;
         text-decoration: underline;
         display: inline;
       }
