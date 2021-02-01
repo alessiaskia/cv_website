@@ -15,32 +15,37 @@ export const translationView = (lang) => `
     </div>
     <div class="section-content">
         <div class="photo-box conference"></div>
-        <div class="services-box black-box d-flex justify-around flex-wrap">
-            <div class="card">
-                <h3 class="title-cards">${tradTranslation[lang].trad}</h3>
-                <i class="fas fa-language"></i>
-                <h4>${tradTranslation[lang].tradLangs}</h4>
-                <button class="btn-more">${tradTranslation[lang].knowMore}</button>
-                <p class="hide show">${tradTranslation[lang].tradSpecialisations}</p>
+        <div class="services-box">
+            <div class="black-box">
+                <div class="container-card d-flex justify-around flex-wrap">
+                    <div class="card">
+                        <h3 class="title-cards">${tradTranslation[lang].trad}</h3>
+                        <i class="fas fa-language"></i>
+                        <h4>${tradTranslation[lang].tradLangs}</h4>
+                        <button class="btn-more">${tradTranslation[lang].knowMore}</button>
+                        <p class="hide show">${tradTranslation[lang].tradSpecialisations}</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="title-cards">${tradTranslation[lang].int}</h3>
+                        <i class="fas fa-headphones-alt"></i>
+                        <h4>${tradTranslation[lang].intLangs}</h4>
+                        <ul>
+                            <li>${tradTranslation[lang].sim}</li>
+                            <button class="btn-more">${tradTranslation[lang].knowMore}</button>
+                            <p class="hide show">${tradTranslation[lang].knowMoreSim}</p>
+                            <li>${tradTranslation[lang].cons}</li>
+                            <button class="btn-more">${tradTranslation[lang].knowMore}</button>
+                            <p class="hide show">${tradTranslation[lang].knowMoreCons}</p>
+                            <li>${tradTranslation[lang].whisp}</li>
+                            <button class="btn-more">${tradTranslation[lang].knowMore}</button>
+                            <p class="hide show">${tradTranslation[lang].knowMoreWhisp}</p>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://www.proz.com/profile/1718389 target="_blank">${tradTranslation[lang].proz}</a>
+                </div>
             </div>
-            <div class="card">
-                <h3 class="title-cards">${tradTranslation[lang].int}</h3>
-                <i class="fas fa-headphones-alt"></i>
-                <h4>${tradTranslation[lang].intLangs}</h4>
-                <ul>
-                    <li>${tradTranslation[lang].sim}</li>
-                    <button class="btn-more">${tradTranslation[lang].knowMore}</button>
-                    <p class="hide show">${tradTranslation[lang].knowMoreSim}</p>
-                    <li>${tradTranslation[lang].cons}</li>
-                    <button class="btn-more">${tradTranslation[lang].knowMore}</button>
-                     <p class="hide show">${tradTranslation[lang].knowMoreCons}</p>
-                    <li>${tradTranslation[lang].whisp}</li>
-                    <button class="btn-more">${tradTranslation[lang].knowMore}</button>
-                     <p class="hide show">${tradTranslation[lang].knowMoreWhisp}</p>
-                </ul>
-            </div>
-            <a href="https://www.proz.com/profile/1718389 target="_blank">${tradTranslation[lang].proz}</a>
-            </div>
+        </div>
         <div class="button-box">
             <button class="btn-quote btn-orange">
                 <a href="#contact">${tradTranslation[lang].quote}</a>

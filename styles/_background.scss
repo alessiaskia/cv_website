@@ -17,7 +17,6 @@
 
       ul {
         list-style-type: square;
-        text-align: left;
         padding: 3px 1px 1px 10px;
         text-align: left;
       }
@@ -64,6 +63,41 @@
     }
     .mons {
       background-image: url(./static/mons.jpg);
+    }
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .background {
+    .section-content {
+      .card {
+        width: 50%;
+        height: 220px;
+        margin: 5px;
+        padding: 5px;
+        ul {
+          list-style-type: none;
+          text-align: center;
+          margin: auto;
+          width: 100%;
+        }
+        li {
+          font-size: 1rem;
+          line-height: 1.2rem;
+          padding: 10px 3px;
+        }
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+      .bruxelles4 {
+        background-image: url(./static/horta-h.jpg);
+      }
     }
   }
 }

@@ -51,6 +51,7 @@ $xl: 1280px; //desktop
       margin-top: 30px;
       font-weight: 400;
       letter-spacing: 1px;
+      text-align: center;
     }
   }
 }
@@ -61,4 +62,13 @@ $xl: 1280px; //desktop
 
 /* view for desktop and laptop */
 @media only screen and (min-width: $lg) {
+  .translation {
+    .photo-box {
+      height: 500px;
+      background-position: center right;
+    }
+    .card {
+      width: 500px !important;
+    }
+  }
 }

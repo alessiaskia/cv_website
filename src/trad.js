@@ -51,7 +51,7 @@ export const tradAbout = {
     p1: 'I am a <strong>Junior Web Application Developer,</strong><br/>interpreter and translator.<br /> I live in Brussels',
     p2: 'Studying, working and living in four European countries helped me develop a truly global mindset, the ability to adapt and the courage to take up new challenges.',
     p3: ' After more than 7 years of professional experience as a <strong>translator, conference interpreter and language specialist</strong>, I have decided to dive into the world of programming, with a full-time Web application development training at <strong>Interface3</strong> (Brussels).',
-    p4: 'I am currently looking for a <strong>6-8 weeks internship opportunity in June-July 2021</strong> to continue improving my skills.',
+    p4: 'I am currently looking for a <strong>6-8 weeks internship opportunity between May 24th and July 2nd/6th 2021</strong> to continue improving my skills.',
     contact: 'Get in touch',
   },
   fr: {
@@ -60,7 +60,7 @@ export const tradAbout = {
     p1: "Je suis une <strong>Junior Web Application Developer</strong>, interprète et traductrice.<br /> J'habite à Bruxelles.",
     p2: "Avoir étudié, travaillé et habité dans quatre pays européens m'a permis de développer une véritable mentalité internationale, la capacité de m'adapter à toute situation et le courage de relever de nouveaux défis.",
     p3: "Après plus de 7 ans d'expérience professionnelle en tant que <strong>traductrice, interprète et spécialiste du language</strong>, j'ai décidé de découvrir le monde de la programmation, avec un programme de formation à temps plein chez <strong>Interface3</strong> (Bruxelles).",
-    p4: 'À présent, je cherche un <strong>stage de 6 à 8 semaines pendant les mois de juin-juillet 2021</strong> pour continuer à améliorer mes compétences dans ce domaine.',
+    p4: 'À présent, je cherche un <strong>stage de 6 à 8 semaines du 24 Mai 2021 au 2/16 Juillet 2021</strong> pour continuer à améliorer mes compétences dans ce domaine.',
     contact: 'contactez-moi',
   },
   nl: {
@@ -69,7 +69,7 @@ export const tradAbout = {
     p1: 'Ik ben een <strong>Junior Web Application Developer </strong>, vertalster en tolk.<br /> Ik woon in Brussel.',
     p2: 'Dankzij mijn studie-, levens- en werkervaringen in vier Europese landen, heb ik een echte globale mentaliteit ontwikkeld, leerde ik om me makkelijk aan nieuwe situaties aan te passen en kreeg ik de moed om uitdagingen aan te gaan.',
     p3: 'Na meer dan 7 jaar professionele ervaring als <strong>vertalster, conferentietolk en taalkundig</strong>, besloot ik om de wereld van web programming te ontdekken, met een Web application development voltijdse opleiding bij <strong>Interface3</strong> (Brussel).',
-    p4: 'Tegenwoordig zoek ik op een <strong>6-8 weken stage in juni-juli 2021</strong> om mijn vaardigheden te verbeteren.',
+    p4: 'Tegenwoordig zoek ik op een <strong>6-8 weken stage tussen 24 mei en 2/16 juli 2021</strong> om mijn vaardigheden te verbeteren.',
     contact: 'neem contact op',
   },
 };
