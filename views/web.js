@@ -52,7 +52,9 @@ document.body.addEventListener('click', (e) => {
                     <a href="${projectToShow.github}" target="_blank">Link to Github</a>
                   </li>
                 </ul>
-              <button class="close btn-orange">X</button>
+              <div class="button-box">
+                <button class="close btn-orange">X</button>
+              </div>
             </div>`;
     const spaceForPopup = document.querySelector('.project-box');
     spaceForPopup.innerHTML += popup;
@@ -60,7 +62,7 @@ document.body.addEventListener('click', (e) => {
     e.preventDefault();
     const popups = document.querySelectorAll('.popup');
     for (popup of popups) {
-      const popupContainer = e.target.parentNode.parentNode;
+      const popupContainer = e.target.parentNode.parentNode.parentNode;
       popupContainer.removeChild(popup);
     }
   }

@@ -10,10 +10,6 @@ $xl: 1280px; //desktop
 .about {
   .photo-box {
     background-image: url("./static/alessia-41.jpg");
-    // width: 80% !important;
-    // margin-left: 20px;
-    // margin-bottom: 0 !important;
-    // border: 2px solid $primary-blue;
   }
 
   blockquote {
@@ -26,14 +22,7 @@ $xl: 1280px; //desktop
     letter-spacing: 3px;
   }
 
-  // .presentation {
-  //   background-color: $secondary-blue;
-  //   width: 100%;
-  //   padding: 20px 0px;
-  // }
-
   .btn-orange {
-    // margin-left: 30vw;
     margin-top: 30px;
     padding: 15px 30px;
   }
@@ -45,4 +34,26 @@ $xl: 1280px; //desktop
 
 /* view for desktop and laptop */
 @media only screen and (min-width: $lg) {
+  .about {
+    blockquote {
+      padding: 10% 10% 3% 18%;
+      letter-spacing: 3px;
+    }
+    .presentation {
+      display: flex;
+      width: 100%;
+      .photo-box {
+        width: 600px;
+        height: 400px;
+        margin: 10px;
+      }
+    }
+    p {
+      padding: 10px 50px;
+      font-size: 1.1rem;
+    }
+    a {
+      font-size: 1rem;
+    }
+  }
 }

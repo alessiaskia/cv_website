@@ -26,6 +26,13 @@ function render() {
         <h1 class="my-name">Alessia Scaccia</h1>
         <p class="my-title-web">${tradHeader[currentLanguage].web}</p>
         <p class="my-title-trad">${tradHeader[currentLanguage].trad}</p>
+        <div class="choice-language">
+        <ul class="d-flex flex-row">
+          <li class="choose">${tradHeader[currentLanguage].choose}</li>
+          <li><a class="language-button" id="en">en</a></li>
+          <li><a class="language-button" id="fr">fr</a></li>
+          <li><a class="language-button" id="nl">nl</a></li>
+        </ul>
       </div>`;
   menu = `
   <div class="nav-bar-links">
@@ -87,12 +94,12 @@ function render() {
             </div>`;
   nav.innerHTML = menu;
   header.innerHTML = headerContent;
-  footer.innerHTML = footerContent;
   allSections.innerHTML = aboutView(currentLanguage);
   allSections.innerHTML += webView(currentLanguage);
   allSections.innerHTML += translationView(currentLanguage);
   allSections.innerHTML += backgroundView(currentLanguage);
   allSections.innerHTML += contactView(currentLanguage);
+  footer.innerHTML = footerContent;
 }
 
 render();
@@ -107,6 +114,8 @@ document.body.addEventListener('click', (e) => {
     console.log(menuButton.className);
     menuButton.classList.replace('fa-bars', 'fa-times');
     console.log(menuButton.className);
+  } else if (e.target.matches('.enter')) {
+    render();
     // --- cache/montre barre nav --- //
     // open -- fa-bars
     // close -- fa-times

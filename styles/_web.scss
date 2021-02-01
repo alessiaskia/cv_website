@@ -19,24 +19,33 @@ $xl: 1280px; //desktop
   }
 
   .popup {
-    position: absolute;
+    position: fixed;
     top: 50%;
-    border: 1px solid $primary-white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1.5px solid $accent-orange;
     border-radius: 3%;
     background-color: $primary-blue;
-    width: 100vw;
-    height: 100vh;
-    height: max-content;
-    .btn-orange {
-      margin-left: 45%;
-      margin-bottom: 5%;
-      padding: 12px;
+    width: 360px;
+    height: 360px;
+    padding: 10px 20px;
+
+    .button-box {
+      padding: 25%;
+      position: relative;
+      .btn-orange {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 18px;
+      }
     }
   }
 
   ul {
     margin: auto;
-    padding: 10px 0px;
+    padding-top: 10px;
     width: 100%;
     text-align: center;
   }
@@ -48,12 +57,15 @@ $xl: 1280px; //desktop
     border-bottom: 1px solid $primary-white;
     text-align: center;
   }
+  .skill-name:last-child {
+    border-bottom: none;
+  }
   .project-box {
     position: relative;
     .card {
       width: 280px;
       height: 200px;
-      margin: 5px;
+      margin: 8px;
     }
   }
 
@@ -69,15 +81,19 @@ $xl: 1280px; //desktop
   }
 
   .project-li {
-    color: $accent-orange;
+    color: $primary-white;
     letter-spacing: 2px;
     padding: 10px;
     text-align: center;
+
     a {
       text-decoration: underline;
       padding: 0px;
       color: $primary-white;
     }
+  }
+  .language {
+    text-transform: uppercase;
   }
 }
 
@@ -87,4 +103,41 @@ $xl: 1280px; //desktop
 
 /* view for desktop and laptop */
 @media only screen and (min-width: $lg) {
+  .web-dev {
+    .photo-box {
+      height: 500px;
+      background-position: center;
+    }
+    .project-box {
+      .card {
+        width: 360px;
+        height: 260px;
+      }
+    }
+    .project-title {
+      font-size: 1.8rem;
+      padding-top: 30%;
+      padding-bottom: 40%;
+    }
+    .popup {
+      width: 600px;
+      height: 400px;
+      padding: 40px 20px;
+      ul {
+        padding: 10px 30px;
+      }
+      li {
+        padding-bottom: 20px;
+      }
+      .button-box {
+        padding: 10%;
+        .btn-orange {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 18px;
+        }
+      }
+    }
+  }
 }

@@ -55,11 +55,7 @@ $xl: 1280px; //desktop
     }
     /* language buttons */
     .choice-language {
-      position: absolute;
-      top: 40%;
-      right: 5%;
-      text-align: center;
-      overflow: hidden;
+      display: none;
     }
   }
 
@@ -79,66 +75,72 @@ $xl: 1280px; //desktop
     animation-timing-function: fade-in;
     animation-duration: 0.8s;
   }
+}
 
-  /* view for tablets */
-  @media only screen and (min-width: $md) {
-    .landing-page {
-      display: none;
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  @keyframes colorFade {
+    from {
+      background-color: $primary-blue;
+    }
+    to {
+      background-color: $primary-orange;
     }
   }
 
-  /* view for desktop and laptop */
-  @media only screen and (min-width: $lg) {
-    @keyframes colorFade {
-      from {
-        background-color: $primary-blue;
+  .landing-page {
+    position: static;
+    background-color: $primary-orange;
+    animation-name: colorFade;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slogan {
+      margin: auto;
+      text-align: center;
+      text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7);
+      .my-name {
+        letter-spacing: 0.6rem;
+        font-size: 8rem;
       }
-      to {
-        background-color: $primary-orange;
+      .my-title-web {
+        display: block;
+        font-size: 4rem;
       }
-    }
+      .my-title-trad {
+        display: block;
+        font-size: 3rem;
+      }
 
-    .landing-page {
-      background-color: $primary-orange;
-      animation-name: colorFade;
-      animation-duration: 6s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .slogan {
-        margin: auto;
-        text-align: center;
-        text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7);
-        .my-name {
-          letter-spacing: 0.6rem;
-          font-size: 8rem;
-        }
-        .my-title-web {
-          display: block;
-          font-size: 4rem;
-        }
-        .my-title-trad {
-          display: block;
-          font-size: 3rem;
-        }
+      /* language buttons */
+      .choice-language {
+        display: block;
+
         ul {
           justify-content: center;
           align-items: center;
+          padding: 0px;
         }
         li {
           padding: 2px;
           margin: 20px;
+          font-size: 2rem;
         }
         a {
+          text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.7);
           padding: 8px;
           font-size: 2rem;
           color: $primary-white;
-          text-shadow: none;
+          cursor: pointer;
         }
         i {
           font-size: 2.4rem;
@@ -146,5 +148,8 @@ $xl: 1280px; //desktop
         }
       }
     }
+  }
+  .menu-button {
+    display: none;
   }
 }
