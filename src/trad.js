@@ -48,7 +48,7 @@ export const tradAbout = {
   en: {
     about: 'about',
     me: 'me',
-    p1: 'I am a <strong>Junior Web Application Developer,</strong><br/>interpreter and translator.<br /> I live in Brussels',
+    p1: 'I am a <strong>Junior Web Application Developer</strong><br/>interpreter and translator<br /> I live in Brussels',
     p2: 'Studying, working and living in four European countries helped me develop a truly global mindset, the ability to adapt and the courage to take up new challenges.',
     p3: ' After more than 7 years of professional experience as a <strong>translator, conference interpreter and language specialist</strong>, I have decided to dive into the world of programming, with a full-time Web application development training at <strong>Interface3</strong> (Brussels).',
     p4: 'I am currently looking for a <strong>6-8 weeks internship opportunity between May 24th and July 2nd/6th 2021</strong> to continue improving my skills.',

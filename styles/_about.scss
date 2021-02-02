@@ -9,11 +9,11 @@ $xl: 1280px; //desktop
 /* mobile */
 .about {
   .photo-box {
-    background-image: url("./static/alessia-41.jpg");
+    background-image: url("./static/alessia-39.jpg");
   }
 
   blockquote {
-    padding: 18% 0 6% 0;
+    padding: 12% 0;
     opacity: 1;
     text-align: right;
     font-size: 1.2rem;
@@ -36,16 +36,18 @@ $xl: 1280px; //desktop
 @media only screen and (min-width: $lg) {
   .about {
     blockquote {
-      padding: 10% 10% 3% 18%;
+      padding: 10% 6% 3% 18%;
+      line-height: 3rem;
       letter-spacing: 3px;
     }
     .presentation {
       display: flex;
+      justify-content: space-around;
       width: 100%;
       .photo-box {
-        width: 600px;
-        height: 400px;
-        margin: 50px;
+        width: 400px;
+        height: 600px;
+        margin: 10px 0 10px 100px;
       }
     }
     p {
