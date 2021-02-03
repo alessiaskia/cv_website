@@ -22,8 +22,9 @@ export const translationView = (lang) => `
                         <h3 class="title-cards">${tradTranslation[lang].trad}</h3>
                         <i class="fas fa-language"></i>
                         <h4>${tradTranslation[lang].tradLangs}</h4>
-                        <button class="btn-more">${tradTranslation[lang].knowMore}</button>
-                        <p class="hide show">${tradTranslation[lang].tradSpecialisations}</p>
+                        <p class="show">${tradTranslation[lang].tradSpecialisations}</p>
+                        <p class="show">${tradTranslation[lang].tradServices}</p>
+                        <p class="show">${tradTranslation[lang].cat}</p>
                     </div>
                     <div class="card">
                         <h3 class="title-cards">${tradTranslation[lang].int}</h3>
@@ -44,12 +45,13 @@ export const translationView = (lang) => `
                 </div>
                 <a href="https://www.proz.com/profile/1718389 target="_blank">${tradTranslation[lang].proz}</a>
                 </div>
-            </div>
-        </div>
-        <div class="button-box">
-            <button class="btn-quote btn-orange">
-                <a href="#contact">${tradTranslation[lang].quote}</a>
-            </button>
+                </div>
+                <div class="button-box d-flex justify-around">
+                    <button class="btn-quote btn-orange">
+                        <a href="#contact">${tradTranslation[lang].quote}</a>
+                    </button>
+                </div>
+            
         </div>
     </div>
 `;

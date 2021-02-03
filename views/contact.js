@@ -40,14 +40,15 @@ export const contactView = (lang) => `
             </label>
 
             <textarea name="message" maxlenght="500" placeholder="${tradContact[lang].placeholderMsg}" id="msg" cols="20" rows="10" required></textarea>
-
-            <button type="submit" 
-                value="send"
-                id="btn-formulaire"
-                class="contact btn-orange"
-                target="_blank">
-                ${tradContact[lang].send}
-            </button>
+            <div class="button-box">
+                <button type="submit" 
+                    value="send"
+                    id="btn-formulaire"
+                    class="contact btn-orange"
+                    target="_blank">
+                    ${tradContact[lang].send}
+                </button>
+            </div>
         </div>
         </form>
     </div>

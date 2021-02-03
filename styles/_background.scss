@@ -13,11 +13,11 @@
 
       h3 {
         color: $primary-orange;
+        letter-spacing: 5px;
+        padding-bottom: 20px;
       }
 
       ul {
-        list-style-type: square;
-        padding: 3px 1px 1px 10px;
         text-align: left;
       }
       li {
@@ -80,11 +80,17 @@
         height: 220px;
         margin: 5px;
         padding: 5px;
+        position: relative;
         ul {
           list-style-type: none;
           text-align: center;
           margin: auto;
           width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
         }
         li {
           font-size: 1rem;

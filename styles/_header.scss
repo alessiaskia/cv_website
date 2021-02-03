@@ -83,22 +83,26 @@ $xl: 1280px; //desktop
 
 /* view for desktop and laptop */
 @media only screen and (min-width: $lg) {
-  @keyframes colorFade {
-    from {
-      background-color: $primary-blue;
-    }
-    to {
-      background-color: $primary-orange;
-    }
-  }
+  // @keyframes colorFade {
+  //   from {
+  //     background-color: $primary-blue;
+  //   }
+  //   to {
+  //     background-color: $primary-orange;
+  //   }
+  // }
 
   .landing-page {
     position: static;
-    background-color: $primary-orange;
-    animation-name: colorFade;
-    animation-duration: 6s;
-    animation-iteration-count: 2;
-    animation-direction: alternate;
+    background-color: $accent-orange;
+    background-image: url(./static/stairs.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    // animation-name: colorFade;
+    // animation-duration: 6s;
+    // animation-iteration-count: 2;
+    // animation-direction: alternate;
     width: 100%;
     height: 100%;
     display: flex;
