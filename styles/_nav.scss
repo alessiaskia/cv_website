@@ -13,7 +13,8 @@ $xl: 1280px; //desktop
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: $primary-orange;
+  border: 1px solid $primary-orange;
+  background-color: $primary-blue;
   z-index: 1;
   .nav-bar-links {
     .list-rubriques {
@@ -46,7 +47,7 @@ $xl: 1280px; //desktop
     a:active {
       font-weight: 800;
       font-size: 2.2rem;
-      color: $secondary-blue;
+      color: $primary-orange;
     }
 
     // a:active {                     *momentaneamente in sospeso*
@@ -68,26 +69,26 @@ $xl: 1280px; //desktop
 /* view for desktop and laptop */
 @media only screen and (min-width: $lg) {
   .nav-bar {
+    display: block;
     background-color: $primary-blue;
     color: $primary-white;
     position: fixed;
     left: 0;
     top: 0;
     height: 100%;
-    width: 5vw;
+    width: 6vw;
     .nav-bar-links {
       .list-rubriques {
         padding-left: 14px;
-        padding-top: 60px;
-        // padding-top: unset;
+        padding-top: 20px;
         li {
           writing-mode: vertical-rl;
           transform: rotate(180deg);
-          padding: 10px;
+          padding: 12px;
         }
       }
       a {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
       a:hover,
       a:active {
@@ -97,7 +98,7 @@ $xl: 1280px; //desktop
       }
       .choice-language {
         ul {
-          padding-top: 40px;
+          padding-top: 20px;
         }
       }
     }

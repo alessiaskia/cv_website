@@ -36,7 +36,8 @@ $xl: 1280px; //desktop
   top: 0px;
   z-index: 5;
   width: 100%;
-  background-color: $primary-orange;
+  background-color: $primary-blue;
+  border: 1px solid $primary-orange;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   /* my slogan */
   .slogan {
@@ -86,7 +87,7 @@ $xl: 1280px; //desktop
 @media only screen and (min-width: $lg) {
   .fa-bars,
   .fa-times {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 1vw;
