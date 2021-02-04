@@ -20,7 +20,7 @@ export const tradHeader = {
 export const tradMenu = {
   en: {
     about: 'about',
-    web: 'web development',
+    web: 'web',
     translation: 'translation',
     background: 'background',
     contact: 'contact',
@@ -28,7 +28,7 @@ export const tradMenu = {
   },
   fr: {
     about: 'à propos',
-    web: 'développement web',
+    web: 'web',
     translation: 'traduction',
     background: 'parcours',
     contact: 'contact',
@@ -36,7 +36,7 @@ export const tradMenu = {
   },
   nl: {
     about: 'over mij',
-    web: 'web development',
+    web: 'web',
     translation: 'vertaling',
     background: 'achtergrond',
     contact: 'contact',

@@ -39,6 +39,7 @@ $xl: 1280px; //desktop
       padding: 10% 6% 3% 18%;
       line-height: 3rem;
       letter-spacing: 3px;
+      font-size: 1.5rem;
     }
     .presentation {
       display: flex;
@@ -52,11 +53,7 @@ $xl: 1280px; //desktop
       }
     }
     p {
-      padding: 10px 50px;
-      font-size: 1.1rem;
-    }
-    a {
-      font-size: 1rem;
+      padding: 10px 80px;
     }
   }
 }

@@ -8,7 +8,7 @@ export const skills = [
   {
     group: 'languages',
     icon: '<i class="show-more cursor-pointer fas fa-code"></i>',
-    name: ['C#', ' PHP 5', ' SQL', ' Javascript', ' Python'],
+    name: ['C#', ' PHP', ' SQL', ' Javascript', ' Python'],
   },
   {
     group: 'frameworks',

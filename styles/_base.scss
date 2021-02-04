@@ -19,13 +19,13 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 body {
   font-family: Avenir-Roman, Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.2;
   text-align: left;
   background-color: $secondary-blue;
   color: $primary-white;
@@ -110,12 +110,12 @@ i {
 /* button basic settings */
 button {
   font-weight: 200;
-  font-size: 10pt;
   padding: 15px;
   color: white;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 button:hover,
@@ -249,6 +249,17 @@ button:focus {
     h2 {
       font-size: 3rem;
       letter-spacing: 5.2px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    li {
+      font-size: 1.2rem;
+    }
+    button {
+      font-size: 1.1rem;
     }
     .black-box {
       background-color: $primary-blue;

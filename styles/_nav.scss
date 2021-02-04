@@ -64,58 +64,40 @@ $xl: 1280px; //desktop
       font-size: 1.5rem;
     }
   }
-
-  /* view for desktop and laptop */
-  @media only screen and (min-width: $lg) {
-    .nav-bar {
-      background-color: $primary-orange;
-      color: $primary-white;
-      position: fixed;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 5%;
-
-      .nav-bar-links {
-        ul {
-          display: flex;
-          height: 85%;
-          justify-content: space-around;
-          position: absolute;
-          margin-top: 5px;
-          left: 25%;
-          top: 5%;
-          list-style-type: none;
-          writing-mode: vertical-rl;
-          text-align: right;
-          background-color: $primary-blue;
-          transform: rotate(180deg);
-        }
+}
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .nav-bar {
+    background-color: $primary-blue;
+    color: $primary-white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5vw;
+    .nav-bar-links {
+      .list-rubriques {
+        padding-left: 14px;
+        padding-top: 60px;
+        // padding-top: unset;
         li {
-          margin: 8px;
+          writing-mode: vertical-rl;
+          transform: rotate(180deg);
+          padding: 10px;
         }
-
-        a {
-          color: $primary-white;
-          font-size: 1rem;
-          letter-spacing: 0.2rem;
-          font-weight: 500;
-        }
-        a:hover {
-          -webkit-transition: all 0.2s;
-          -moz-transition: all 0.2s;
-          transition: all 0.2s;
-        }
-        a:hover,
-        a:focus,
-        a:active {
-          margin-right: 100px;
-          font-weight: 600;
-          font-size: 1.3rem;
-        }
-
-        a:active {
-          border: 2.5px solid $primary-blue;
+      }
+      a {
+        font-size: 1rem;
+      }
+      a:hover,
+      a:active {
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: $primary-orange;
+      }
+      .choice-language {
+        ul {
+          padding-top: 40px;
         }
       }
     }
