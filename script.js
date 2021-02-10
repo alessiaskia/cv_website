@@ -2,6 +2,8 @@
 import './style.scss';
 // import $ from 'jquery';
 // import axios from 'axios';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { tradHeader, tradMenu } from './src/trad';
 import { aboutView } from './views/about';
 import { webView } from './views/web';
@@ -9,6 +11,14 @@ import { translationView } from './views/translation';
 import { backgroundView } from './views/background';
 import { contactView } from './views/contact';
 
+// Aos
+window.addEventListener('load', AOS.refresh);
+AOS.init({
+  duration: 1000,
+  disable: 'mobile',
+});
+
+// query selectors for DOM Interaction
 const nav = document.querySelector('.nav-bar');
 const allSections = document.querySelector('.all-sections');
 const footer = document.querySelector('footer');
@@ -19,6 +29,7 @@ let footerContent = document.querySelector('.row');
 let currentLanguage = 'en';
 const textArea = document.querySelector('textarea');
 
+// rendering the content every time language is changed
 function render() {
   headerContent = `
       <i class="fas fa-bars menu-button show"></i>
@@ -33,7 +44,8 @@ function render() {
           <li><a class="language-button" id="fr">fr</a></li>
           <li><a class="language-button" id="nl">nl</a></li>
         </ul>
-      </div>`;
+      </div>
+      <a href="#about"><i class="fas fa-angle-down"></i></a>`;
   menu = `
   <div class="nav-bar-links">
     <i class="fas fa-times close"></i>
@@ -55,10 +67,10 @@ function render() {
     </li>
   </ul>
   <div class="choice-language">
-    <ul class="d-flex flex-row">
-      <li><a class="language-button" id="en">en</a></li>
-      <li><a class="language-button" id="fr">fr</a></li>
-      <li><a class="language-button" id="nl">nl</a></li>
+    <ul>
+      <li><a class="language-button cursor-pointer" id="en">en</a></li>
+      <li><a class="language-button cursor-pointer" id="fr">fr</a></li>
+      <li><a class="language-button cursor-pointer" id="nl">nl</a></li>
     </ul>
   </div>
 </div>`;
@@ -105,6 +117,11 @@ function render() {
 render();
 const menuButton = document.querySelector('.menu-button');
 
+// event delegation
+// 1: change language
+// 2: open/close burger menu in mobile version
+// 3: clean up text in message box
+
 document.body.addEventListener('click', (e) => {
   if (e.target.matches('.language-button')) {
     currentLanguage = e.target.id;
@@ -116,9 +133,6 @@ document.body.addEventListener('click', (e) => {
     console.log(menuButton.className);
   } else if (e.target.matches('.enter')) {
     render();
-    // --- cache/montre barre nav --- //
-    // open -- fa-bars
-    // close -- fa-times
   } else if (e.target.matches('.fa-bars')) {
     console.log('open ok');
     nav.classList.replace('hide', 'show');

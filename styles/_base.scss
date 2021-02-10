@@ -29,6 +29,7 @@ body {
   text-align: left;
   background-color: $secondary-blue;
   color: $primary-white;
+  border: 1px solid $primary-orange;
 }
 
 .d-flex {
@@ -68,7 +69,8 @@ section,
 img,
 label,
 input,
-textarea {
+textarea,
+blockquote {
   display: block;
 }
 
@@ -81,6 +83,7 @@ h6,
 footer,
 header,
 nav {
+  display: block;
   font-family: Bebas Neue, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
 }
@@ -145,7 +148,6 @@ button:focus {
     font-size: 3.5rem;
     letter-spacing: 1.9px;
     transform: translate(0%, 5%);
-    z-index: 99;
   }
 
   h2 {
@@ -264,7 +266,7 @@ button:focus {
     .black-box {
       background-color: $primary-blue;
       width: 100%;
-      padding: 30px 50px;
+      padding: 30px 10px 30px 50px;
     }
     .card {
       width: 20%;

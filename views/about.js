@@ -5,7 +5,7 @@ import { tradAbout, tradMenu } from '../src/trad';
 export const aboutView = (lang) => `
 <section class="rubrique about">
     <div class="section-top">
-    <a name="about" class="anchor"></a>
+    <a name="about"></a>
     <h1>${tradAbout[lang].about} <span class="accent"> ${tradAbout[lang].me}</span></h1>
     </div>
     <div class="section-content">

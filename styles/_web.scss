@@ -38,14 +38,14 @@ $xl: 1280px; //desktop
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 18px;
+        padding: 12px;
       }
     }
   }
 
   ul {
     margin: auto;
-    padding-top: 10px;
+    padding-top: 30px;
     width: 100%;
     text-align: center;
   }
@@ -73,10 +73,7 @@ $xl: 1280px; //desktop
     padding-bottom: 40%;
     text-align: center;
     letter-spacing: 3px;
-    color: $primary-blue;
-    &:hover {
-      color: $primary-orange;
-    }
+    color: $primary-orange;
   }
 
   .project-li {
@@ -117,6 +114,10 @@ $xl: 1280px; //desktop
       font-size: 1.8rem;
       padding-top: 30%;
       padding-bottom: 40%;
+      color: $primary-blue;
+      &:hover {
+        color: $primary-orange;
+      }
     }
 
     .skill-name {

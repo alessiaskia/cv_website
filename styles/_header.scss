@@ -27,6 +27,10 @@ $xl: 1280px; //desktop
   text-shadow: none;
 }
 
+.fa-angle-down {
+  display: none;
+}
+
 .landing-page {
   display: flex;
   position: fixed;
@@ -37,7 +41,6 @@ $xl: 1280px; //desktop
   z-index: 5;
   width: 100%;
   background-color: $primary-blue;
-  border: 1px solid $primary-orange;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   /* my slogan */
   .slogan {
@@ -93,8 +96,27 @@ $xl: 1280px; //desktop
     left: 1vw;
     font-size: 2.2rem;
   }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .fa-angle-down {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-out;
+  }
   .landing-page {
-    position: static;
+    position: relative;
     background-color: $accent-orange;
     background-image: url(./static/stairs.jpg);
     background-size: cover;

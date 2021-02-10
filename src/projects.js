@@ -24,8 +24,8 @@ export const projects = [
   {
     title: 'Project ASP.Net',
     language: 'C#',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti nemo dolorum soluta enim in.',
-    github: 'https://github.com/alessiaskia/',
+    description: 'Application for managing a pole dance school (user registration, subscription and booking a class)',
+    github: 'https://github.com/alessiaskia/EcolePoleDance',
     img: 'hackathon.png',
   },
   {
