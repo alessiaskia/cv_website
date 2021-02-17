@@ -1,0 +1,135 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+footer {
+  position: relative;
+  background-color: $primary-orange;
+  color: $primary-white;
+  width: 100%;
+  height: 100px;
+  letter-spacing: 0.05rem;
+  margin-top: 150px;
+  li {
+    padding-left: 10px;
+  }
+
+  .row {
+    position: absolute;
+    top: 25%;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: $primary-blue;
+    color: $primary-white;
+
+    .link-languages {
+      li:hover,
+      li:focus {
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        font-weight: bold;
+      }
+    }
+
+    .link-icons {
+      li,
+      i {
+        line-height: 2.2vh;
+        text-align: center;
+        font-size: 1.3rem;
+      }
+
+      li:hover,
+      a:hover,
+      i:hover {
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        font-weight: bold;
+      }
+      a {
+        color: $primary-white;
+      }
+
+      .fab,
+      .fas {
+        width: 2.8vh;
+      }
+    }
+    .thanks {
+      position: absolute;
+      bottom: -10px;
+    }
+  }
+}
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  footer {
+    background-color: $primary-orange;
+    color: $primary-white;
+    height: 20%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+
+    .row {
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 50%;
+      background-color: $primary-blue;
+      color: $primary-white;
+      li {
+        padding-left: 30px;
+      }
+      .link-languages {
+        li:hover,
+        li:focus {
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          transition: all 0.2s;
+          font-weight: bold;
+        }
+      }
+
+      .link-icons {
+        li,
+        i {
+          line-height: 2.2vh;
+          text-align: center;
+          font-size: 1.8rem;
+        }
+
+        li:hover,
+        a:hover,
+        i:hover {
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          transition: all 0.2s;
+          font-weight: bold;
+        }
+        a {
+          color: $primary-white;
+        }
+
+        .fab,
+        .fas {
+          width: 2.8vh;
+        }
+      }
+    }
+  }
+}

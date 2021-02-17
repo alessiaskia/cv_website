@@ -1,0 +1,61 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+
+.contact {
+  .btn-orange {
+    margin-top: 30px;
+    padding: 15px 30px;
+  }
+  .button-box {
+    text-align: center;
+  }
+  .contact-box {
+    padding: 30px 30px 0 10px;
+    margin: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  form {
+    background-color: $secondary-blue;
+  }
+  label,
+  input,
+  textarea {
+    width: 300px;
+    margin-bottom: 10px;
+    font-family: Avenir-Roman, Arial, sans-serif !important;
+    line-height: 25px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .contact {
+    form {
+      padding-right: 0;
+      text-align: center;
+    }
+    label,
+    input,
+    textarea {
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40vw;
+      font-size: 1.2rem;
+    }
+  }
+}

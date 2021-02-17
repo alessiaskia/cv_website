@@ -1,0 +1,175 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+
+// open -- fa-bars
+// close -- fa-times
+
+.fa-bars,
+.fa-times {
+  display: block;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0 0 1px;
+  transition: 0.5s ease;
+  z-index: 100;
+}
+
+.fa-times {
+  text-shadow: none;
+}
+
+.fa-angle-down {
+  display: none;
+}
+
+.landing-page {
+  display: flex;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  top: 0px;
+  z-index: 5;
+  width: 100%;
+  background-color: $primary-blue;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  /* my slogan */
+  .slogan {
+    .my-name {
+      letter-spacing: 0.4rem;
+      font-size: 2.1rem;
+      padding: 10px 0 0 60px;
+      color: $primary-white;
+    }
+    .my-title-web {
+      display: none;
+      font-size: 2.2rem;
+    }
+    .my-title-trad {
+      display: none;
+      font-size: 1.6rem;
+    }
+    /* language buttons */
+    .choice-language {
+      display: none;
+    }
+  }
+
+  /* show with slower transition */
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .show {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: fade-in;
+    animation-duration: 0.8s;
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .fa-bars,
+  .fa-times {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 1vw;
+    font-size: 2.2rem;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .fa-angle-down {
+    display: block;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-out;
+  }
+  .landing-page {
+    position: relative;
+    background-color: $accent-orange;
+    background-image: url(./static/stairs.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slogan {
+      margin: auto;
+      text-align: center;
+      text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+      .my-name {
+        letter-spacing: 0.6rem;
+        font-size: 8rem;
+      }
+      .my-title-web {
+        display: block;
+        font-size: 4rem;
+      }
+      .my-title-trad {
+        display: block;
+        font-size: 3rem;
+      }
+
+      /* language buttons */
+      .choice-language {
+        display: block;
+
+        ul {
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+        }
+        li {
+          padding: 2px;
+          margin: 20px;
+          font-size: 2rem;
+        }
+        a {
+          text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+          padding: 8px;
+          font-size: 2rem;
+          color: $primary-white;
+          cursor: pointer;
+        }
+        i {
+          font-size: 2.4rem;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

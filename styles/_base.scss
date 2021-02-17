@@ -1,0 +1,303 @@
+/* general rubriques */
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* general settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Avenir-Roman, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: left;
+  background-color: $secondary-blue;
+  color: $primary-white;
+  border: 1px solid $primary-orange;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+header,
+nav,
+footer,
+aside,
+main,
+section,
+img,
+label,
+input,
+textarea,
+blockquote {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer,
+header,
+nav {
+  display: block;
+  font-family: Bebas Neue, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+video,
+audio {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: $primary-white;
+  background-color: transparent;
+}
+
+i {
+  font-size: 2.4rem;
+  color: $primary-white;
+  font-weight: 100;
+}
+
+/* button basic settings */
+button {
+  font-weight: 200;
+  padding: 15px;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:hover,
+button:focus {
+  border: 1px solid $primary-white;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.all-sections {
+  width: 100%;
+  margin-top: 50px;
+
+  .rubrique {
+    margin-top: 100px;
+  }
+
+  h1 {
+    text-align: right;
+    font-size: 3.5rem;
+    letter-spacing: 1.9px;
+    transform: translate(0%, 5%);
+  }
+
+  h2 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: auto;
+  }
+
+  p {
+    line-height: 25px;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  i {
+    padding: 10px;
+    font-size: 3rem;
+    color: $primary-white;
+    &:hover {
+      color: $primary-orange;
+    }
+  }
+
+  .anchor {
+    padding: 30px;
+  }
+  .accent {
+    color: $accent-orange;
+  }
+
+  .photo-box {
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+    opacity: 0.9;
+  }
+
+  .section-top {
+    background-color: $primary-blue;
+  }
+
+  .black-box {
+    background-color: $primary-blue;
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  .card {
+    justify-items: center;
+    background-color: $card-color;
+    color: $primary-blue;
+    margin: 30px 10px;
+    width: 40%;
+    height: max-content;
+    text-align: center;
+    border-radius: 3%;
+    padding: 10px;
+  }
+
+  .card:hover {
+    border: 3px solid $accent-orange;
+  }
+
+  .title-cards {
+    color: $primary-orange;
+    padding-top: 5%;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    line-height: 1.5rem;
+  }
+
+  .btn-orange,
+  .btn-more {
+    background-color: $accent-orange;
+    &:hover {
+      background-color: $accent-orange-hover;
+    }
+  }
+
+  .btn-more {
+    padding: 8px 10px;
+    margin: 20px 5px;
+    font-size: 0.8rem;
+  }
+}
+
+.fa-angle-up {
+  display: block;
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  color: $primary-white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: $accent-orange;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .fa-angle-up {
+    right: 20px;
+  }
+  .all-sections {
+    h1 {
+      font-size: 6rem;
+      letter-spacing: 2.2px;
+    }
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 5.2px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    li {
+      font-size: 1.2rem;
+    }
+    button {
+      font-size: 1.1rem;
+    }
+    .black-box {
+      background-color: $primary-blue;
+      width: 100%;
+      padding: 30px 10px 30px 50px;
+    }
+    .card {
+      width: 20%;
+      padding: 30px;
+    }
+    .title-cards {
+      padding-top: 10%;
+      line-height: 2rem;
+      font-size: 1.6rem;
+    }
+    .btn-orange,
+    .btn-more {
+      font-weight: bold;
+    }
+  }
+}

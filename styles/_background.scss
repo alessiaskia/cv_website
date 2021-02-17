@@ -1,0 +1,115 @@
+.background {
+  .section-content {
+    .card {
+      width: 50%;
+      height: max-content;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 1%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
+      background-position: center;
+
+      h3 {
+        color: $primary-orange;
+        letter-spacing: 5px;
+        padding-bottom: 20px;
+      }
+
+      ul {
+        text-align: left;
+      }
+      li {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        line-height: 1.2rem;
+        padding: 3px 1px;
+      }
+      a {
+        color: $primary-orange !important;
+        text-decoration: underline;
+        display: inline;
+      }
+    }
+    .postcard {
+      width: 320px;
+      height: 330px;
+    }
+
+    .trieste {
+      background-image: url(./static/ts-porto.jpg);
+    }
+    .barcelona {
+      background-image: url(./static/bcn-gracia.jpg);
+    }
+    .zagreb {
+      background-image: url(./static/kat.jpg);
+    }
+    .bruxelles1 {
+      background-image: url(./static/bruxelles.jpeg);
+    }
+    .bruxelles2 {
+      background-image: url(./static/comic.jpg);
+    }
+    .bruxelles3 {
+      background-image: url(./static/flagey.jpg);
+    }
+    .bruxelles4 {
+      background-image: url(./static/horta.jpg);
+    }
+    .bruxelles5 {
+      background-image: url(./static/galeries.jpg);
+    }
+    .mons {
+      background-image: url(./static/mons.jpg);
+    }
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .background {
+    .section-content {
+      .card {
+        width: 45%;
+        height: 220px;
+        margin: 5px;
+        padding: 5px;
+        position: relative;
+        ul {
+          list-style-type: none;
+          text-align: center;
+          margin: auto;
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        li {
+          font-size: 1.1rem;
+          line-height: 1.2rem;
+          padding: 10px 3px;
+        }
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+      .bruxelles1 {
+        background-image: url(./static/grandplace.jpg);
+        background-position: bottom;
+      }
+      .bruxelles2 {
+        background-image: url(./static/comic.png);
+      }
+      .bruxelles4 {
+        background-image: url(./static/horta-h.jpg);
+      }
+    }
+  }
+}

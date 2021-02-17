@@ -1,0 +1,153 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+.web-dev {
+  .programming {
+    background-image: url("./static/alessia-12.jpg");
+  }
+
+  .portfolio,
+  .it-skills {
+    padding-top: 20px;
+    background-color: $primary-blue;
+  }
+
+  ul {
+    margin: auto;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1.5px solid $primary-white;
+    border-radius: 3%;
+    background-size: cover;
+    background-color: $primary-blue;
+    width: 360px;
+    height: 360px;
+    padding: 10px 20px;
+
+    ul {
+      background-color: $primary-blue;
+      border-radius: 3%;
+    }
+
+    .button-box {
+      padding: 25%;
+      position: relative;
+      .btn-orange {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 12px;
+      }
+    }
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    padding: 10px;
+    border-bottom: 1px solid $primary-white;
+    text-align: center;
+  }
+  .skill-name:last-child {
+    border-bottom: none;
+  }
+  .project-box {
+    position: relative;
+    .card {
+      width: 280px;
+      height: 200px;
+      margin: 8px;
+    }
+  }
+  .project-title {
+    padding-top: 30%;
+    padding-bottom: 40%;
+    text-align: center;
+    letter-spacing: 3px;
+    color: $primary-orange;
+  }
+
+  .project-li {
+    color: $primary-white;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-align: center;
+
+    a {
+      text-decoration: underline;
+      padding: 0px;
+      color: $primary-white;
+    }
+  }
+  .language {
+    text-transform: uppercase;
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .web-dev {
+    .photo-box {
+      height: 500px;
+      background-position: center;
+    }
+    .project-box {
+      .card {
+        width: 360px;
+        height: 260px;
+      }
+    }
+    .project-title {
+      font-size: 1.8rem;
+      padding-top: 30%;
+      padding-bottom: 40%;
+      color: $primary-blue;
+      &:hover {
+        color: $primary-orange;
+      }
+    }
+
+    .skill-name {
+      font-size: 1.1rem;
+    }
+    .popup {
+      width: 60%;
+      height: 80%;
+      padding: 40px 20px;
+      ul {
+        padding: 10px 30px;
+        width: 50%;
+      }
+      li {
+        padding-bottom: 20px;
+      }
+      .button-box {
+        padding: 10%;
+        .btn-orange {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

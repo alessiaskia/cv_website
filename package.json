@@ -11,17 +11,19 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.1",
+    "aos": "^3.0.0-beta.6",
     "axios": "0.20.0",
     "bootstrap": "4.5.3",
     "jquery": "3.5.1",
+    "slidr": "0.0.1",
     "trad": "^0.2.0"
   },
   "devDependencies": {
     "eslint": "7.11.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.1",
-    "parcel-bundler": "1.12.4",
+    "parcel-bundler": "^1.12.4",
     "parcel-plugin-static-files-copy": "2.5.0",
-    "sass": "1.27.0"
+    "sass": "^1.27.0"
   }
 }

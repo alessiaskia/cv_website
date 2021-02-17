@@ -1,0 +1,59 @@
+/* MEDIA-QUERIES */
+
+/* variables */
+$sm: 640px; //smartphones
+$md: 768px; //tablets
+$lg: 1024px; //lapto
+$xl: 1280px; //desktop
+
+/* mobile */
+.about {
+  .photo-box {
+    background-image: url("./static/alessia-39.jpg");
+  }
+
+  blockquote {
+    padding: 12% 0;
+    opacity: 1;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 35px;
+    font-style: italic;
+    letter-spacing: 3px;
+  }
+
+  .btn-orange {
+    margin-top: 30px;
+    padding: 15px 30px;
+  }
+}
+
+/* view for tablets */
+@media only screen and (min-width: $md) {
+}
+
+/* view for desktop and laptop */
+@media only screen and (min-width: $lg) {
+  .about {
+    blockquote {
+      padding: 5% 6% 3% 10%;
+      line-height: 3rem;
+      letter-spacing: 3px;
+      font-size: 1.3rem;
+    }
+    .presentation {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      .photo-box {
+        width: 400px;
+        //height: 600px;
+        margin: 10px 0 10px 30px;
+      }
+    }
+    p {
+      padding: 10px 80px;
+    }
+  }
+}
