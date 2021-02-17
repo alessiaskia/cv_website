@@ -237,12 +237,30 @@ button:focus {
     font-size: 0.8rem;
   }
 }
+
+.fa-angle-up {
+  display: block;
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  color: $primary-white;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: $accent-orange;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
 /* view for tablets */
 @media only screen and (min-width: $md) {
 }
 
 /* view for desktop and laptop */
 @media only screen and (min-width: $lg) {
+  .fa-angle-up {
+    right: 20px;
+  }
   .all-sections {
     h1 {
       font-size: 6rem;

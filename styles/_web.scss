@@ -18,17 +18,30 @@ $xl: 1280px; //desktop
     background-color: $primary-blue;
   }
 
+  ul {
+    margin: auto;
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
   .popup {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 1.5px solid $accent-orange;
+    border: 1.5px solid $primary-white;
     border-radius: 3%;
+    background-size: cover;
     background-color: $primary-blue;
     width: 360px;
     height: 360px;
     padding: 10px 20px;
+
+    ul {
+      background-color: $primary-blue;
+      border-radius: 3%;
+    }
 
     .button-box {
       padding: 25%;
@@ -41,13 +54,6 @@ $xl: 1280px; //desktop
         padding: 12px;
       }
     }
-  }
-
-  ul {
-    margin: auto;
-    padding-top: 30px;
-    width: 100%;
-    text-align: center;
   }
 
   .skill-name {
@@ -124,11 +130,12 @@ $xl: 1280px; //desktop
       font-size: 1.1rem;
     }
     .popup {
-      width: 600px;
-      height: 400px;
+      width: 60%;
+      height: 80%;
       padding: 40px 20px;
       ul {
         padding: 10px 30px;
+        width: 50%;
       }
       li {
         padding-bottom: 20px;
@@ -139,7 +146,6 @@ $xl: 1280px; //desktop
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          padding: 18px;
         }
       }
     }

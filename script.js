@@ -111,7 +111,7 @@ function render() {
   allSections.innerHTML += translationView(currentLanguage);
   allSections.innerHTML += backgroundView(currentLanguage);
   allSections.innerHTML += contactView(currentLanguage);
-  footer.innerHTML = footerContent;
+  footer.innerHTML += footerContent;
 }
 
 render();

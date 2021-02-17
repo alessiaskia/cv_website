@@ -7,14 +7,14 @@ let skillContainer = '<div class="skill-container black-box d-flex flex-wrap jus
 let projectBox = '<div class="project-box d-flex flex-wrap justify-center black-box">';
 let projectID = 0;
 let popup = '';
-
+const currentLanguage = 'en';
 // create cards
 // objective : obtain variable "container" to integrate in view
 for (const skill of skills) {
   let skillCard = `
     <div class="card">
     ${skill.icon}
-    <h3 class="skill-group show-more cursor-pointer title-cards">${skill.group}</h3>
+    <h3 class="skill-group show-more cursor-pointer title-cards">${skill.group[currentLanguage]}</h3>
     <ul class="hide show">`;
   for (let i = 0; i < skill.name.length; i++) {
     skillCard += `<li class="skill-name">${skill.name[i]}</li>`;
@@ -27,7 +27,7 @@ skillContainer += '</div>';
 // create portfolio cards
 for (const project of projects) {
   const projectCard = `
-  <div class="card project cursor-pointer" id="${projectID}" style="background-image: url(static/${project.img})">
+  <div class="card project cursor-pointer" id="${projectID}">
     <h3 class="project-title cursor-pointer">${project.title}</h3>
   </div>`;
   projectID++;
@@ -44,16 +44,18 @@ document.body.addEventListener('click', (e) => {
     const selectedProject = e.target.parentNode;
     const projectToShow = projects[selectedProject.id];
     popup = `
-            <div class="popup show">
+            <div class="popup show" style="background-image: url(${projectToShow.img})">
+              <div>
                 <ul>
-                  <li class="project-li language">Written mainly in <strong>${projectToShow.language}</strong></li>
+                  <li class="project-li language">Written in <strong>${projectToShow.language}</strong></li>
                   <li class="project-li">${projectToShow.description}</li>
                   <li class="project-li git">
-                    <a href="${projectToShow.github}" target="_blank">Link to Github</a>
+                    <a href="${projectToShow.github}" target="_blank">Github</a>
                   </li>
                 </ul>
-              <div class="button-box">
-                <button class="close btn-orange">X</button>
+                <div class="button-box">
+                  <button class="close btn-orange">X</button>
+                </div>
               </div>
             </div>`;
     const spaceForPopup = document.querySelector('.project-box');
@@ -62,7 +64,7 @@ document.body.addEventListener('click', (e) => {
     e.preventDefault();
     const popups = document.querySelectorAll('.popup');
     for (popup of popups) {
-      const popupContainer = e.target.parentNode.parentNode.parentNode;
+      const popupContainer = e.target.parentNode.parentNode.parentNode.parentNode;
       popupContainer.removeChild(popup);
     }
   }
