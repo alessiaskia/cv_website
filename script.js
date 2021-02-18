@@ -10,6 +10,7 @@ import { webView } from './views/web';
 import { translationView } from './views/translation';
 import { backgroundView } from './views/background';
 import { contactView } from './views/contact';
+import { getSelectedLanguage, setSelectedLanguage } from './staticVarLanguage';
 
 // Aos
 window.addEventListener('load', AOS.refresh);
@@ -26,7 +27,7 @@ let menu = document.querySelector('.nav-bar-links');
 let headerContent = document.querySelector('.header-content');
 const header = document.querySelector('.landing-page');
 let footerContent = document.querySelector('.row');
-let currentLanguage = 'en';
+let currentLanguage = getSelectedLanguage();
 const textArea = document.querySelector('textarea');
 
 // rendering the content every time language is changed
@@ -121,10 +122,10 @@ const menuButton = document.querySelector('.menu-button');
 // 1: change language
 // 2: open/close burger menu in mobile version
 // 3: clean up text in message box
-
 document.body.addEventListener('click', (e) => {
   if (e.target.matches('.language-button')) {
     currentLanguage = e.target.id;
+    setSelectedLanguage(currentLanguage);
     // console.log(currentLanguage);
     e.preventDefault();
     render();
