@@ -6,7 +6,7 @@ export const skills = [
     name: ['HTML5', ' CSS3', ' XML/XSLT', ' AJAX', ' jQuery', ' Responsive Web Design', ' Bootstrap'],
   },
   {
-    group: { en: 'languages', fr: 'langages', nl: 'programmeertalen' },
+    group: { en: 'languages', fr: 'langages', nl: 'talen' },
     icon: '<i class="show-more cursor-pointer fas fa-code"></i>',
     name: ['C#', ' PHP', ' SQL', ' Javascript', ' Python'],
   },
@@ -16,7 +16,7 @@ export const skills = [
     name: ['ASP.Net', ' Symfony', ' React', ' Angular', ' Node JS'],
   },
   {
-    group: { en: 'databases', fr: 'bases de données', nl: 'databases' },
+    group: { en: 'databases', fr: 'BD', nl: 'databases' },
     icon: '<i class="show-more cursor-pointer fas fa-database"></i>',
     name: ['MySQL', ' Microsoft SQL Server', ' phpMyAdmin'],
   },
@@ -41,7 +41,7 @@ export const skills = [
     name: ['Apache', ' IIS'],
   },
   {
-    group: { en: 'PM', fr: 'Gestion de projets', nl: 'Projectbeheer' },
+    group: { en: 'PM', fr: 'PM', nl: 'PM' },
     icon: '<i class="show-more cursor-pointer fas fa-tasks"></i>',
     name: ['Mockup', ' Ergonomics', ' Hosting', ' SEO referencing', ' RAD & SCRUM'],
   },

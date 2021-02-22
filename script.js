@@ -89,7 +89,7 @@ function render() {
           <div class="link-icons">
               <ul class="d-flex">
                   <li title="CV">
-                      <a href="src/${tradMenu[currentLanguage].cv}" target="_blank">
+                      <a href="cv/${tradMenu[currentLanguage].cv}" target="_blank">
                           <i class="fas fa-file-download"></i>
                       </a>
                   </li>
