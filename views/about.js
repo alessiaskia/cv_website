@@ -31,7 +31,7 @@ export const aboutView = (lang) => `
                 <a href="#contact">${tradAbout[lang].contact}</a>
             </button>
             <button class="btn-contact btn-orange">
-                <a href="src/${tradMenu[lang].cv}" target="_blank"> CV </a>
+                <a href="cv/${tradMenu[lang].cv}" target="_blank"> CV </a>
             </button>
         </div>
     </div>

@@ -65,7 +65,7 @@ document.body.addEventListener('click', (e) => {
     };
     const popupLang = (popuplang) => {
       const popupContent = `<div class="popup show" style="background-image: url(${projectToShow.img})">
-            <div>
+            <div class="description-block">
               <ul>
                 <li class="project-li language"><strong>${projectToShow.language}</strong></li>
                 <li class="project-li">${popupDescription(popuplang)}</li>
