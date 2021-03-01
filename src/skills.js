@@ -3,7 +3,7 @@ export const skills = [
   {
     group: { en: 'web', fr: 'web', nl: 'web' },
     icon: '<i class="show-more cursor-pointer fas fa-laptop"></i>',
-    name: ['HTML5', ' CSS3', ' XML/XSLT', ' AJAX', ' jQuery', ' Responsive Web Design', ' Bootstrap'],
+    name: ['HTML5', ' CSS3', ' XML/XSLT', ' AJAX', ' jQuery', ' Responsive Web Design', ' Bootstrap', 'Tailwind'],
   },
   {
     group: { en: 'languages', fr: 'langages', nl: 'talen' },
